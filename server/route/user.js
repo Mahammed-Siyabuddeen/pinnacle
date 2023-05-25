@@ -1,4 +1,6 @@
 import express from 'express'
-const Router = express.Router()
+const router = express.Router()
 
-export default Router
+router.post('/')
+
+export default router
