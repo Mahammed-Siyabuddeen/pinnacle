@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+}
+
+.f-x-y {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-red {
+    background-color: rgb(213, 80, 80);
+    color: #fff;
+}
+
+.br-8 {
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+input:hover {
+    border: none;
+    outline: none;
+}
