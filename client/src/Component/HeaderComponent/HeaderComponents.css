@@ -1,0 +1,41 @@
+.header {
+    background-color: #1976d2;
+    background-image: url('/public/images/shine.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    /* z-index: -1; */
+
+}
+.headerContentDiv{
+    height: 70%;
+    width: 80%;
+    /* background-color: #1976cf7a; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border-radius: 15px; */
+    /* border: 2px solid white; */
+
+}
+.headerContentDiv> .headerContentDiv1{
+    height: 70%;
+
+}
+.headerContentDiv1>img{
+    width: 100%;
+    height: 100%;
+}
+.headerContentDiv>.headerContentDiv2{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+.headerContentDiv>div>button{
+    margin: 10px;
+
+}
