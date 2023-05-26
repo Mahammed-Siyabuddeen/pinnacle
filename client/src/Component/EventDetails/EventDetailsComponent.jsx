@@ -60,22 +60,7 @@ function EventDetailsComponent() {
                             </div>
                         </div>
 
-                        <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
-                            <div>
-                              <h2>jhon viston</h2>
-                              <p>jhine@gmail.com</p>
-                              <p>87905687904</p>
-                            </div>
-                        </div>
-                        <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
-                            <div>
-                              <h2>jhon viston</h2>
-                              <p>jhine@gmail.com</p>
-                              <p>87905687904</p>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
         </div>

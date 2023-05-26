@@ -27,6 +27,7 @@
     /* scroll-snap-type: x mandatory; */
     width: 95%;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .card {
