@@ -24,11 +24,10 @@ export const registerToEvent = async (req, res) => {
         })
         const data = await newRegister.save()
 
-        console.log(data)
         downloadPdf(data).then(({ err, isValid, pdfUrl }) => {
             if (err || isValid == false) return console.log('downlaod pdf is not valid')
 
-            const { subject, htmlStructure } = getEmailStructure()
+            const { subject, htmlStructure } = getEmailStructure(data.ITManagerName, pdfUrl)
             console.log(data.Email)
             sendMail(data.Email, subject, '', htmlStructure).then((res) => {
                 console.log('sended message', res)
@@ -66,8 +65,9 @@ export const sendMail = (email, subject, text, html) => {
 
 
 export const downloadPdf = (data) => {
+    console.log(data)
     return new Promise((resolve, reject) => {
-        ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), async (err, data) => {
+        ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), { data }, async (err, data) => {
             if (err) return reject({ err })
             const browser = await puppeteer.launch({ headless: 'new' })
             const page = await browser.newPage()
@@ -75,11 +75,11 @@ export const downloadPdf = (data) => {
                 waitUntil: 'domcontentloaded'
             })
             await page.setViewport({ width: 1680, height: 1050 });
-
-            const pdfUrl = `${Date.now()}${data.id}.pdf`
-            console.log(pdfUrl)
+            const randomString = (Math.random() + 1).toString(36).substring(7);
+            const pdfUrl = `${Date.now()}${randomString}.pdf`
+            
             await page.pdf({
-                path: path.join(__dirname, './', 'public', pdfUrl),
+                path: path.join(__dirname, './', 'public', 'EventPdf', pdfUrl),
                 format: "A4"
             })
             await browser.close()
@@ -112,25 +112,31 @@ const getEmailStructure = (managerName, fileUrl) => {
     }
 
     h1 {
+        margin:auto;
         font-size: 55px;
     }
 
     p {
+        margin:auto;
         font-size: 25px;
     }
 
 
     span {
+        margin:auto;
         font-size: 22px;
         font-weight: 600;
     }
 
     .button {
-        width: 5rem;
+        width:5rem;
         background-color: rgb(49, 70, 188);
         padding: 15px 30px;
         border-radius: 10px;
         margin: 10px auto;
+        display:flex;
+        align-item:center;
+        justify-content:center;
     }
 
     .button a {
@@ -138,6 +144,9 @@ const getEmailStructure = (managerName, fileUrl) => {
         height: 100%;
         text-decoration: none;
         color: #fff;
+        display:flex;
+        align-item:center;
+        justify-content:center;
     }
 </style>
 </head>
@@ -145,11 +154,11 @@ const getEmailStructure = (managerName, fileUrl) => {
     <h1>St Philomea Pinnacle 2023</h1>
     <p>Dear ${managerName} your registration in pinncle is succussfull </p>
     <div class="imagebox">
-        <img src="public/images/bgImage/bgimage1.jpg" alt="">
+        <img src="http://localhost:8000/images/Pinnaclelogo.png" alt="">
     </div>
 
     <span class="span">You can download your applicants detais pdf here </span>
-    <div class="button"><a href="http://localhost:3000/${fileUrl}">Download</a></div>
+    <div class="button"><a href="http://localhost:8000/EventPdf/${fileUrl}">Download</a></div>
 </body>
 
 </html>`
