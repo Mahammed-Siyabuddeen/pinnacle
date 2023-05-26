@@ -1,6 +1,6 @@
 import React from 'react'
 import './eventcomponent.css'
-
+import {Button} from '@mui/material'
 const Eventcard = ({ imageSrc }) => {
     return (
         <div className="card">
@@ -11,9 +11,10 @@ const Eventcard = ({ imageSrc }) => {
                 Web Designing
             </div>
 
-            <div className="card__button">
+            {/* <div className="card__button">
                 Raad more
-            </div>
+            </div> */}
+            <Button variant='contained' >Read More</Button>
         </div>
     )
 }

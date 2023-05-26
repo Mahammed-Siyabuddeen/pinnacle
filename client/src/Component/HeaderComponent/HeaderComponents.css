@@ -22,7 +22,9 @@
 }
 .headerContentDiv> .headerContentDiv1{
     height: 70%;
-
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .headerContentDiv1>img{
     width: 100%;
@@ -38,4 +40,10 @@
 .headerContentDiv>div>button{
     margin: 10px;
 
+}
+
+@media screen and (max-width:500) {
+    .headerContentDiv> .headerContentDiv1{
+        width: auto;
+    }
 }
