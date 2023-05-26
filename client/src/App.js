@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './index.css'
 import Homeapage from './page/Homepage/Homeapage'
 import Registerpage from './page/Registepage/Registerpage'
+import EventDetails from './page/EventDetailsPage/EventDetails'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<Homeapage />} />
           <Route exact path='/register' element={<Registerpage />} />
+          <Route  exact  path='/eventdetails' element={<EventDetails/>}/>
         </Routes>
       </BrowserRouter>
     </div>
