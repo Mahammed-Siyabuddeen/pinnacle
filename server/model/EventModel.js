@@ -2,8 +2,50 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const EventSchema = new Schema({
-
+    Email: { type: String },
+    CollegeName: { type: String },
+    ITManagerName: { type: String },
+    WebDesign: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ITQuiz: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    Coding: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    Gaming: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    PaperPresentation: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ProductLaunch: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    SurpriseEvent: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    PhotoGraphyAndVideoGraphy: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ITManager: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
 })
 
-const EventSchemaModel = mongoose.model('EventSchema', EventSchema)
-export default EventSchemaModel
+const EventModel = mongoose.model('EventSchema', EventSchema)
+export default EventModel
