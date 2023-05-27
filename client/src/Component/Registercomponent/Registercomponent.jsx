@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import './registercomponent.css'
 import Inputcomponent from './Inputcomponent/Inputcomponent'
 import axios from 'axios'
+import { useNavigate } from 'react-router'
 
 const Registercomponent = () => {
     const [isOpenSpecialInputBox, setIsOpenSpcecialInputBox] = useState(false)
-
+    const navigate = useNavigate()
     const [Email, setEmail] = useState(null)
     const [CollegeName, setCollegeName] = useState('')
     const [ITManagerName, setITManagerName] = useState('')
@@ -25,8 +26,10 @@ const Registercomponent = () => {
         axios.post('http://localhost:8000/registerToEvent', {
             Email, CollegeName, ITManagerName, WebDesign, ITQuiz, Coding
             , Gaming, ITManager, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy
-        }).then((data) => {
+        }).then(({ data }) => {
+
             console.log(data)
+            if (data.isValid) navigate(`/download/${data.pdfUrl}`)
         }).catch((err) => console.log('err', err))
     }
 
@@ -59,7 +62,7 @@ const Registercomponent = () => {
                         <span >Email</span>
                         <input type="text" />
                     </div>
-                </div> */}          
+                </div> */}
 
                 <Inputcomponent title='Web Designing' inputName='WebDesign' inputHandler={setWebDesign} componentState={WebDesign} />
                 <Inputcomponent title='IT Quiz' inputName='ITQuiz' inputHandler={setITQuiz} componentState={ITQuiz} />

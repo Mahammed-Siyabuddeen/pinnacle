@@ -17,10 +17,10 @@ const Navbarcomponent = () => {
           <img src="images/Philos_Logo.png" alt="" />
         </div>
         <div className="navbar__content">
-          <div className='f-x-y'>Home</div>
-          <div className='f-x-y'>About</div>
-          <div className='f-x-y'>Contact</div>
-          <div className='f-x-y'>Home</div>
+          <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
+          <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
+          <div className='f-x-y' onClick={() => navigate('')}>Contact</div>
+          <div className='f-x-y' onClick={() => navigate('')}>Home</div>
         </div>
         <div className="navbar__menubutton" onClick={menuButtonHandler}>
           <span></span>

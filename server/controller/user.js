@@ -28,8 +28,9 @@ export const registerToEvent = async (req, res) => {
 
             const { subject, htmlStructure } = getEmailStructure(data.ITManagerName, pdfUrl)
             console.log(data.Email)
-            sendMail(data.Email, subject, '', htmlStructure).then((res) => {
-                console.log('sended message', res)
+            sendMail(data.Email, subject, '', htmlStructure).then((data) => {
+                console.log('finished ')
+                return res.status(200).json({isValid:true,pdfUrl})
             }).catch((err) => console.log('email error ', error))
 
         }).catch((err) => console.log('err', err))
@@ -75,7 +76,7 @@ export const downloadPdf = (data) => {
             await page.setViewport({ width: 1680, height: 1050 });
             const randomString = (Math.random() + 1).toString(36).substring(7);
             const pdfUrl = `${Date.now()}${randomString}.pdf`
-            
+
             await page.pdf({
                 path: path.join(__dirname, './', 'public', 'EventPdf', pdfUrl),
                 format: "A4"
