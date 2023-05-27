@@ -14,7 +14,7 @@ const Navbarcomponent = () => {
 
       <div className='navbar'>
         <div className="navbar__logo">
-          <img src="images/Philos_Logo.png" alt="" />
+          <img src="/images/Philos_Logo.png" alt="" />
         </div>
         <div className="navbar__content">
           <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
