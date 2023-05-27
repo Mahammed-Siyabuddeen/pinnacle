@@ -59,7 +59,7 @@ const Registercomponent = () => {
                         <span >Email</span>
                         <input type="text" />
                     </div>
-                </div> */}
+                </div> */}          
 
                 <Inputcomponent title='Web Designing' inputName='WebDesign' inputHandler={setWebDesign} componentState={WebDesign} />
                 <Inputcomponent title='IT Quiz' inputName='ITQuiz' inputHandler={setITQuiz} componentState={ITQuiz} />

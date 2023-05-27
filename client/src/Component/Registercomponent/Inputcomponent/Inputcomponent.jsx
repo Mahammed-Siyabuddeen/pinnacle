@@ -19,7 +19,7 @@ const Inputcomponent = ({ title, inputName, inputHandler, componentState }) => {
                     </div>
                     <div>
                         <span>Phone Number</span>
-                        <input type="number" name='Phone' onChange={(e) => inputHandler({ ...componentState, [e.target.name]: e.target.value })} />
+                        <input type="tel" name='Phone' onChange={(e) => inputHandler({ ...componentState, [e.target.name]: e.target.value })} />
                     </div>
                 </div>
             }
