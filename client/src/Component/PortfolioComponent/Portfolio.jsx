@@ -2,9 +2,12 @@ import React, { useEffect } from 'react'
 import './portfolio.css'
 import { autoSlider } from './portfolio.js'
 function Portfolio() {
+
   useEffect(() => { 
     autoSlider()
   }, [])
+
+  
   return (
     <div className='portfolio'>
       <h1>Portfolio</h1>

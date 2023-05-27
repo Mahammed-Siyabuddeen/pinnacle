@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     margin-top: 30px;
+    font-size: 24px;
 }
 
 .adminlogin__container span {
@@ -22,4 +23,17 @@
     border-radius: 8px;
     border: none;
     font-size: 20px;
+}
+
+.logincontainer__header {
+    font-size: 45px;
+}
+
+.adminlogin__container-button {
+    padding: 15px 0;
+    background-color: #ef233c;
+    margin-top: 30px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 22px;
 }

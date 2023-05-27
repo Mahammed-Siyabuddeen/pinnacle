@@ -7,7 +7,7 @@ export const loginAdmin = async (req, res) => {
         const { Email, Password } = req.body
 
         const user = await AdminModel.findOne({ Email })
-        if (!user) return res.status(400).json({ isValid: false, errorType: 'INVALIDADMINEMAIL' })
+        if (!user) return res.status(400).json({ isValid: false, errorType: 'INAVALIDEMAIL', errorMessage: 'Incorrect Email' })
         console.log('password match ', user.matchPassword(Password))
         if (!user.matchPassword(Password)) return res.status(400).json({ isValid: false, errorType: 'PASSWORDNOTMATCH' })
 

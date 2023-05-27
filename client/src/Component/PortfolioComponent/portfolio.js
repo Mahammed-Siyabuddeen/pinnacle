@@ -1,11 +1,13 @@
 const protofolioCard = document.getElementsByClassName('portfolio_card')
-let number = 1
+let number = 0
 
 export const autoSlider = () => {
     setInterval(() => {
-        addActiveImage(number)
-        number += 1
-        if (number == 8) number = 0
+        if (protofolioCard.length > 0) {
+            addActiveImage(number)
+            number += 1
+            if (number == 8) number = 0
+        }
     }, 5000)
 }
 
@@ -16,7 +18,6 @@ const addActiveImage = (number) => {
     let backImage
     const backNumber = (number - 1 < 0 ? 7 : number - 1)
 
-    console.log(number, backNumber)
 
 
     const image = document.querySelectorAll(`.portfolio_card`)
@@ -30,6 +31,5 @@ const addActiveImage = (number) => {
 
     backImage.classList.add('rightTransfer')
     backImage.classList.remove('imageLeftToDisplay')
-    console.log(img)
 }
 
