@@ -1,0 +1,20 @@
+.cordinate{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1976d2;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+}
+.cordinate> div{
+    margin: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #ffff;
+}
+.cordinate>img{
+    width: 70%;
+    height: 50%;
+}

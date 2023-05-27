@@ -1,29 +1,84 @@
-.portfolio{
+.portfolio {
     text-align: center;
     margin: 10px;
 }
-.portfolio>h1{
+
+.portfolio>h1 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.portfolio_cards_container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.portfolio_cards_container {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.portfolio_card {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gray;
+    display: block;
+}
+
+.rightTransfer {
+    transition: all 1s ease;
+    animation: toOutsideRight 2s ease forwards;
 
 }
-.portfolio_card{
-    width: 300px;
-    height: 350px;
-    margin: 10px;
+
+.transferRightToDisplay {
+    background-color: red;
+    transition: all 1s ease;
+    transform: translateX(0%);
+}
+
+.portfolio_card img {
+    display: block;
 
 }
+
+.imageLeftToDisplay {
+    animation: toRight 2s ease forwards;
+}
+
+@keyframes  toOutsideRight{
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+
+
+}
+
+
 @media screen and (max-width:600px) {
-    .portfolio_cards_container{
+    .portfolio_cards_container {
         overflow-x: scroll;
         flex-wrap: nowrap;
     }
-    .portfolio_card{
+
+    .portfolio_card {
         min-width: 300px;
     }
 }

@@ -4,6 +4,7 @@ import BadgeIcon from '@mui/icons-material/Badge';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import { Button } from '@mui/material';
 function EventDetailsComponent({data}) {
+    console.log(data);
     return (
         // <div className='event-maincontainer'>
         //     <div>Event Details</div>
@@ -17,18 +18,16 @@ function EventDetailsComponent({data}) {
         <div>
 
             <section id='' className={"EventDetailscontainer"}>
-                <h1>Event Details</h1>
+                <h1>{data?.name}</h1>
                 <div className={"subContainer"}>
                     <div className={"profile"}>
-                        <img src={`http://localhost:3000/images/${data?.img}`} alt="" />
+                        <img src={`http://localhost:3000/images/${data?.imageSrc}`} alt="" />
                     </div>
                     <div className={"details"}>
 
-                        <p className={"para"}> .
-                            Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity.
-                            This event is perfect for those who are passionate about web designing, user experience, and creativity
-                        </p>
+                        <p className={"para"}>{data?.dec}</p>
                         <ul className='eventDetails_ul'>
+                            <h3>Rules</h3>
                             <li>Knowledge of HTML,CSS must</li>
                             <li>Individual Event</li>
                             <li>Round details will be given on spot</li>
