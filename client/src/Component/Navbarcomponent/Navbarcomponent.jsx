@@ -15,6 +15,7 @@ const Navbarcomponent = () => {
       <div className='navbar'>
         <div className="navbar__logo">
           <img src="images/Philos_Logo.png" alt="" />
+          <h1>st philomena college</h1>
         </div>
         <div className="navbar__content">
           <div className='f-x-y'>Home</div>

@@ -51,6 +51,7 @@
     flex-direction: column;
     transition: all .5s ease;
     transform: translateY(-120%);
+    z-index: 1;
 
 }
 

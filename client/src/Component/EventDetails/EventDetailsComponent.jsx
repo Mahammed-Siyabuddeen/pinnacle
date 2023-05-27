@@ -3,7 +3,7 @@ import './style.css'
 import BadgeIcon from '@mui/icons-material/Badge';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import { Button } from '@mui/material';
-function EventDetailsComponent() {
+function EventDetailsComponent({data}) {
     return (
         // <div className='event-maincontainer'>
         //     <div>Event Details</div>
@@ -20,7 +20,7 @@ function EventDetailsComponent() {
                 <h1>Event Details</h1>
                 <div className={"subContainer"}>
                     <div className={"profile"}>
-                        <img src={'images/Coding.jpg'} alt="" />
+                        <img src={`http://localhost:3000/images/${data?.img}`} alt="" />
                     </div>
                     <div className={"details"}>
 
@@ -43,7 +43,7 @@ function EventDetailsComponent() {
                     <div className="eventCordinate_cards">
 
                         <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
+                            <img src={`http://localhost:3000/images/${data?.img}`} alt="" />
                             <div>
                               <h2>jhon viston</h2>
                               <p>jhine@gmail.com</p>
@@ -52,7 +52,7 @@ function EventDetailsComponent() {
                         </div>
 
                         <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
+                            <img src="http://localhost:3000/images/Coding.jpg" alt="" />
                             <div>
                               <h2>jhon viston</h2>
                               <p>jhine@gmail.com</p>
@@ -60,22 +60,7 @@ function EventDetailsComponent() {
                             </div>
                         </div>
 
-                        <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
-                            <div>
-                              <h2>jhon viston</h2>
-                              <p>jhine@gmail.com</p>
-                              <p>87905687904</p>
-                            </div>
-                        </div>
-                        <div className="eventCordinate_card">
-                            <img src="images/Coding.jpg" alt="" />
-                            <div>
-                              <h2>jhon viston</h2>
-                              <p>jhine@gmail.com</p>
-                              <p>87905687904</p>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
         </div>
