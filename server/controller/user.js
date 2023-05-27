@@ -16,7 +16,6 @@ export const registerToEvent = async (req, res) => {
         if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
         if (oldRegisteredDate) return res.status(400).json({ isValid: false, errorType: 'ALREADLOGEDINSAMEEMAIL' })
-        console.log('sssssssssss')
 
         const newRegister = new EventModel({
             Email, CollegeName, ITManagerName, WebDesign, ITQuiz,
@@ -65,7 +64,6 @@ export const sendMail = (email, subject, text, html) => {
 
 
 export const downloadPdf = (data) => {
-    console.log(data)
     return new Promise((resolve, reject) => {
         ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), { data }, async (err, data) => {
             if (err) return reject({ err })
@@ -83,7 +81,6 @@ export const downloadPdf = (data) => {
                 format: "A4"
             })
             await browser.close()
-            console.log('finished')
             resolve({ err, isValid: true, pdfUrl })
         })
     })

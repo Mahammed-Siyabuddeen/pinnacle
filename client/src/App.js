@@ -15,9 +15,9 @@ const App = () => {
           <Route exact path='/' element={<Homeapage />} />
           <Route exact path='/register' element={<Registerpage />} />
           <Route exact path='/adminlogin' element={<Adminloginpage />} />
-          <Route    path='/eventdetails/:eventname' element={<EventDetails/>}/>   
-          <Route    path='/eventdetails/345' element={<EventDetails/>}/>   
-
+          <Route exact path='/eventdetails' element={<EventDetails />} />
+          <Route path='/eventdetails/:eventname' element={<EventDetails />} />
+          <Route path='/eventdetails/345' element={<EventDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

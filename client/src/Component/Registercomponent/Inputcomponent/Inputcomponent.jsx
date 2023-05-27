@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { ExpandCircleDown } from '@mui/icons-material'
-import './inputcomponent.css'
+import { ExpandCircleDown, ArrowCircleDown,ArrowCircleUp } from '@mui/icons-material'
 
 const Inputcomponent = ({ title, inputName, inputHandler, componentState }) => {
     const [isOpenSpecialInputBox, setIsOpenSpcecialInputBox] = useState(false)
@@ -8,7 +7,7 @@ const Inputcomponent = ({ title, inputName, inputHandler, componentState }) => {
         <div className='formcontainer__inputbox-speacialbox'>
             <div className='formcontainer__inputbox-speacialbox-header' onClick={() => setIsOpenSpcecialInputBox(!isOpenSpecialInputBox)}>
                 <span>{title}</span>
-                <span className='f-x-y'><ExpandCircleDown /></span>
+                {!isOpenSpecialInputBox ? <span className='f-x-y'><ArrowCircleDown /></span> : <span className='f-x-y'><ArrowCircleUp /></span>}
             </div>
 
             {isOpenSpecialInputBox &&
@@ -19,7 +18,7 @@ const Inputcomponent = ({ title, inputName, inputHandler, componentState }) => {
                     </div>
                     <div>
                         <span>Phone Number</span>
-                        <input type="number" name='Phone' onChange={(e) => inputHandler({ ...componentState, [e.target.name]: e.target.value })} />
+                        <input type="tel" name='Phone' onChange={(e) => inputHandler({ ...componentState, [e.target.name]: e.target.value })} />
                     </div>
                 </div>
             }

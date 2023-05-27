@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 
     <style>
         * {
@@ -13,83 +13,114 @@
             margin: 0;
         }
 
-        body {
-            height: 200vh;
-        }
-
         img {
             width: 100%;
             height: 100%;
         }
 
-        .mainImage {
-            height: 420px;
+        .headersection {
+            display: flex;
+            justify-content: space-evenly;
+            height: 80px;
+            padding: 0 50px;
+            margin-bottom: 60px;
         }
 
-        .header {
-            background-color: #ff8e51;
-            font-size: 50px;
-            text-align: center;
-            color: #fff;
-            padding: 15px;
+        .headersection .header {
+            font-size: 40px;
+            margin: auto 0;
+        }
+
+        .headersection .mainImage {
+            border-radius: 50%;
         }
 
         .content {
-            padding: 0 100px;
+            padding: 0;
         }
+
 
 
         .detailbox {
+            width: 90%;
+            margin: auto;
             display: flex;
-            width: 80%;
-            margin-top: 10px;
-        }
-
-        .detailbox span {
-            width: 50%;
-        }
-
-        .f-red {
-            color: #d64b00;
-            font-size: 30px;
-            font-weight: 600;
-        }
-
-        .m-60 {
-            margin-top: 60px;
-        }
-
-        .m-30 {
-            margin-top: 40px;
-        }
-
-        .f-40 {
-            font-size: 40px;
-        }
-
-        .detailbox span {
+            justify-content: flex-start;
+            padding: 5px 0;
             font-size: 26px;
+        }
+
+        .detailbox span {
+            width: 40%;
+        }
+
+        .tablecontainer {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            width: 90%;
+            margin: 30px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .tablecontainer thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        
+        .bg-blue {
+            background-color: #009879;
+            color: #ffffff;
+        }
+
+        .tablecontainer tbody tr {
+            text-align: left;
+        }
+
+        .tablecontainer th,
+        .tablecontainer td {
+            padding: 12px 15px;
+        }
+
+        .tablecontainer tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .tablecontainer tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .tablecontainer tbody tr:last-child {
+            border-bottom: 2px solid #009879;
+        }
+
+        .tablecontainer tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        Pinnacle Registration
+    <div class="headersection">
+        <div class="header">
+            Pinnacle Registration
+        </div>
+        <div class="mainImage">
+            <img src="http://localhost:8000/images/Pinnaclelogo.png" alt="">
+        </div>
     </div>
-    <div class="mainImage">
-        <img src="http://localhost:8000/images/Pinnaclelogo.png" alt="">
-    </div>
-
 
     <div class="content">
-        <div class="f-red">College and Event Leader Information</div>
 
-        <div class="detailbox">
-            <span>College Name</span>
+        <div class=" detailbox">
             <span>
                 <%=data.CollegeName%>
             </span>
+            <span>ST Philomena College </span>
         </div>
         <div class="detailbox">
             <span>Email</span>
@@ -104,98 +135,108 @@
             </span>
         </div>
 
-        <div class="f-red m-60 f-40">Event Participants Details</div>
-        <div class="f-red m-30 ">Web Design</div>
-        <div class="detailbox">
-            <span>
-                <%=data.WebDesign.Name%>
-            </span>
-            <span>
-                <%=data.WebDesign.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Coding</div>
-        <div class="detailbox">
-            <span>
-                <%=data.Coding.Name%>
-            </span>
-            <span>
-                <%=data.Coding.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Gaming</div>
-        <div class="detailbox">
-            <span>
-                <%=data.Gaming.Name%>
-            </span>
-            <span>
-                <%=data.Gaming.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">ITQuiz</div>
-        <div class="detailbox">
-            <span>
-                <%=data.ITQuiz.Name%>
-            </span>
-            <span>
-                <%=data.ITQuiz.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Thema Dance</div>
-        <div class="detailbox">
-            <span>
-                <%=data.ThemaDance.Name%>
-            </span>
-            <span>
-                <%=data.ThemaDance.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Paper Presentation</div>
-        <div class="detailbox">
-            <span>
-                <%=data.PaperPresentation.Name%>
-            </span>
-            <span>
-                <%=data.PaperPresentation.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Surprise Event</div>
-        <div class="detailbox">
-            <span>
-                <%=data.SurpriseEvent.Name%>
-            </span>
-            <span>
-                <%=data.SurpriseEvent.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">PhotoGraphy and VideoGraphy</div>
-        <div class="detailbox">
-            <span>
-                <%=data.PhotoGraphyAndVideoGraphy.Name%>
-            </span>
-            <span>
-                <%=data.PhotoGraphyAndVideoGraphy.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">IT Manager</div>
-        <div class="detailbox">
-            <span>
-                <%=data.ITManager.Name%>
-            </span>
-            <span>
-                <%=data.ITManager.Phone%>
-            </span>
-        </div>
-        <div class="f-red m-30 ">Product Launch</div>
-        <div class="detailbox">
-            <span>
-                <%=data.ProductLaunch.Name%>
-            </span>
-            <span>
-                <%=data.ProductLaunch.Phone%>
-            </span>
-        </div>
+        <table class="tablecontainer">
+            <thead>
+                <tr class="bg-blue">
+                    <th>Event Name</th>
+                    <th>Participeant Name</th>
+                    <th>Participent Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Design</td>
+                    <td>
+                        <%=data.WebDesign.Name%>
+                    </td>
+                    <td>
+                        <%=data.WebDesign.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Coding</td>
+                    <td>
+                        <%=data.Coding.Name%>
+                    </td>
+                    <td>
+                        <%=data.Coding.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gaming</td>
+                    <td>
+                        <%=data.Gaming.Name%>
+                    </td>
+                    <td>
+                        <%=data.Gaming.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IT Quiz</td>
+                    <td>
+                        <%=data.ITQuiz.Name%>
+                    </td>
+                    <td>
+                        <%=data.ITQuiz.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thema Dance</td>
+                    <td>
+                        <%=data.ThemaDance.Name%>
+                    </td>
+                    <td>
+                        <%=data.ThemaDance.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paper Presentation</td>
+                    <td>
+                        <%=data.PaperPresentation.Name%>
+                    </td>
+                    <td>
+                        <%=data.PaperPresentation.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Surprise Event</td>
+                    <td>
+                        <%=data.SurpriseEvent.Name%>
+                    </td>
+                    <td>
+                        <%=data.SurpriseEvent.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PhotoGraphy and VideoGraphy</td>
+                    <td>
+                        <%=data.PhotoGraphyAndVideoGraphy.Name%>
+                    </td>
+                    <td>
+                        <%=data.PhotoGraphyAndVideoGraphy.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IT Manager</td>
+                    <td>
+                        <%=data.ITManager.Name%>
+                    </td>
+                    <td>
+                        <%=data.ITManager.Phone%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Launch</td>
+                    <td>
+                        <%=data.ProductLaunch.Name%>
+                    </td>
+                    <td>
+                        <%=data.ProductLaunch.Phone%>
+                    </td>
+                </tr>
 
+            </tbody>
+        </table>
     </div>
 </body>
 
