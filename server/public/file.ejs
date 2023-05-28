@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            margin: 50px 100px;
+            padding: 0px 100px;
 
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
         }
 
         hr {
@@ -43,6 +45,11 @@
             margin-bottom: 10px;
         }
 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+        }
         table,
         tr,
         th,
@@ -110,7 +117,7 @@
                 which
                 needs to be signed by you.
             </P>
-        </div>device-width
+        </div>
 
         <table>
             <tr>
@@ -169,7 +176,7 @@
                     <%=data.ITQuiz.Phone%>
                 </td>
             </tr>
-          
+
             <tr>
                 <td>6</td>
                 <td>IT Quiz</td>
@@ -300,14 +307,14 @@
                 <td>
                     <%=data.ThemaDance.Phone%>
                 </td>
-            </tr>            
+            </tr>
         </table>
 
 
         <div class="consent">
             <h3>Consent Letter:</h3>
             <p>
-                I, Principal of St Philomena College Puttur certify that above facts are true to the best of my
+                I, Principal of <%=data.CollegeName%> certify that above facts are true to the best of my
                 knowledge and belief,
                 and I understand that the students are subjected to any disciplinary actions in the event if the facts
                 are found to be falsified. I hereby permit the students of my college to participate in PINNACLE 2K23.
