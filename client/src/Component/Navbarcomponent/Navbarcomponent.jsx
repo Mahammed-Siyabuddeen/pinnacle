@@ -24,8 +24,7 @@ const Navbarcomponent = () => {
         <div className="navbar__content">
           <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
           <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
-          <div className='f-x-y' onClick={() => navigate('')}>Contact</div>
-          <div className='f-x-y' onClick={() => navigate('')}>Home</div>
+          <div className='f-x-y' onClick={() =>  navigate('/#contact') }>Contact</div>
         </div>
         <div className="navbar__menubutton f-x-y" >
           <Menu onClick={menuButtonHandler} />
@@ -41,8 +40,7 @@ const Navbarcomponent = () => {
         <div className="navbar__menucontent-content">
           <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
           <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
-          <div className='f-x-y'>Service</div>
-          <div className='f-x-y'>Contact</div>
+          <div className='f-x-y' onClick={() => navigate('/#contact')}>Contact</div>
         </div>
       </div>
     </div >

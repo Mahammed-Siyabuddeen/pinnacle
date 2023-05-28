@@ -1,6 +1,6 @@
 .cordinate{
     width: 350px;
-    height: 250px;
+    /* height: 300px; */
     padding: 10px;
     text-align: center;
     background-color: #1976d2;
@@ -8,7 +8,7 @@
     border-radius: 12px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
 }
-.cordinate> div{
+.cordinate> .divContent{
     margin: 10px;
     line-height: 30px;
     font-size: 20px;
@@ -16,5 +16,6 @@
 }
 .cordinate>img{
     width: 70%;
-    height: 50%;
+    height: 70%;
+    border-radius: 50%;
 }

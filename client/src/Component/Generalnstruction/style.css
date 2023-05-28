@@ -1,0 +1,20 @@
+.gn_container{
+    margin: 50px;
+    background-color: #1976d2;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: auto;
+    padding: 45px;
+    
+}
+.gn_container>h1{
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+.gn_content>ul>li{
+  font-size: 19px;
+  line-height: 25px;
+}

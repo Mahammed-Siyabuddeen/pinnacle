@@ -18,7 +18,9 @@
 .contact_container_desc{
     max-width: 350px;
 }
-
+.contact_container_logo a{
+    color: #13161c;
+}
 @media screen and (max-width:600px) {
     .contact_container{
         flex-direction: column;

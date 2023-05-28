@@ -15,12 +15,14 @@
 
 .navbar__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 50%;
     font-size: 28px;
 
 }
-
+.navbar__content>div{
+    cursor: pointer;
+}
 .navbar__menubutton {
     display: flex;
     flex-direction: column;
