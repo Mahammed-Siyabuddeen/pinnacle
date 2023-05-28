@@ -27,10 +27,10 @@ function Desinger() {
                     </div>
 
                     <div className="eventCordinate_card designer_card">
-                        <img src={`/images/desinger1.jpg`} alt="" />
+                        <img src={`/images/ds2.jpeg`} alt="" />
                         <div>
                             <h2> Irfan</h2>
-                            <p>+91 8792635047</p>
+                            <p>+91 6363520187</p>
                         </div>
                         <div className="designer_link">
                             <a href="https://www.instagram.com/siyab._/">
