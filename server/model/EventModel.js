@@ -13,6 +13,10 @@ const EventSchema = new Schema({
         Phone: { type: String },
         Name: { type: String },
     },
+    ITQuiz1: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
     Coding: {
         Phone: { type: String },
         Name: { type: String },
@@ -21,7 +25,31 @@ const EventSchema = new Schema({
         Phone: { type: String },
         Name: { type: String },
     },
+    Gaming1: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
     ThemaDance: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance1: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance2: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance3: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance4: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ThemaDance5: {
         Phone: { type: String },
         Name: { type: String },
     },
@@ -30,6 +58,10 @@ const EventSchema = new Schema({
         Name: { type: String },
     },
     ProductLaunch: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    ProductLaunch1: {
         Phone: { type: String },
         Name: { type: String },
     },

@@ -11,7 +11,7 @@ export const registerToEvent = async (req, res) => {
     try {
         console.log(req.url)
         console.log(req.body)
-        const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz, Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
+        const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1, Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4, ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
 
         if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
@@ -20,12 +20,14 @@ export const registerToEvent = async (req, res) => {
         const pdfUrl = `${Date.now()}${randomString}.pdf`
 
         const newRegister = new EventModel({
-            Email, CollegeName, ITManagerName, WebDesign, ITQuiz,
-            Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager, PdfUrl: pdfUrl
+            Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1,
+            Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4,
+            ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1,
+            SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager, PdfUrl: pdfUrl
         })
         const data = await newRegister.save()
 
-        downloadPdf(data, pdfUrl).then(({ err, isValid, pdfUrl }) => {
+        downloadPdf(data,pdfUrl).then(({ err, isValid, pdfUrl }) => {
             if (err || isValid == false) return console.log('downlaod pdf is not valid')
 
             const { subject, htmlStructure } = getEmailStructure(data.ITManagerName, pdfUrl)
@@ -67,6 +69,7 @@ export const sendMail = (email, subject, text, html) => {
 
 
 export const downloadPdf = (data, pdfUrl) => {
+
     return new Promise((resolve, reject) => {
         ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), { data }, async (err, data) => {
             if (err) return reject({ err })

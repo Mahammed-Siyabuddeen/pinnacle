@@ -21,7 +21,7 @@ function EventDetailsComponent({ data }) {
                 <h1>{data?.name}</h1>
                 <div className={"subContainer"}>
                     <div className={"profile"}>
-                        <img src={`http://localhost:3000/images/${data?.imageSrc}`} alt="" />
+                        <img src={`/images/${data?.imageSrc}`} alt="" />
                     </div>
                     <div className={"details"}>
 
@@ -42,7 +42,15 @@ function EventDetailsComponent({ data }) {
                 <div className="eventCordinate_cards">
 
                     <div className="eventCordinate_card">
-                        <img src={`/images/Coding.jpg`} alt="" />
+                        {/* <img src={`/images/${data?.img}`} alt="" /> */}
+                        <div>
+                            <h2>jhon viston</h2>
+                            <p>jhine@gmail.com</p>
+                            <p>87905687904</p>
+                        </div>
+                    </div>
+                    <div className="eventCordinate_card">
+                        {/* <img src={`/images/Coding.jpg`} alt="" /> */}
                         <div>
                             <h2>jhon vistn</h2>
                             <p>jhine@gmail.com</p>
@@ -51,7 +59,11 @@ function EventDetailsComponent({ data }) {
                     </div>
 
                     <div className="eventCordinate_card">
+<<<<<<< HEAD
                         <img src="/images/Coding.jpg" alt="" />
+=======
+                        {/* <img src="http://localhost:3000/images/Coding.jpg" alt="" /> */}
+>>>>>>> 86e2d93302c35d1467b5d1270a6a5c21b47270af
                         <div>
                             <h2>jhon viston</h2>
                             <p>jhine@gmail.com</p>
@@ -59,11 +71,10 @@ function EventDetailsComponent({ data }) {
                         </div>
                     </div>
 
-
                 </div>
             </div>
         </div>
     )
 }
 
-export default EventDetailsComponent
+export default EventDetailsComponent;
