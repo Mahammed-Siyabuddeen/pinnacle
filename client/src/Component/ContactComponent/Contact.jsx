@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import './Contact.css'
 function Contact() {
   return (
-    <div className="contact_container">
+    <div id="contact" className="contact_container">
         <div>
             <h1>contact</h1>
             <div className='contact_container_logo'><LocationOn/><p>&nbsp;st philomena collge darbe,puttur</p> </div>
