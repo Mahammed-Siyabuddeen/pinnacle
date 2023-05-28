@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import Navbarcomponent from '../../Component/Navbarcomponent/Navbarcomponent'
 import './registercomponent.css'
@@ -11,6 +11,9 @@ const Downloadpage = () => {
     const downloadButtonHandler = () => {
         window.location.href = `http://localhost:8000/EventPdf/${id}`
     }
+    useEffect(()=>{
+    window.scrollTo(0,0)
+    },[])
     return (
         <div >
             <Navbarcomponent />
