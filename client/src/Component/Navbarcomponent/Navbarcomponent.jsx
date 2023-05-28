@@ -3,12 +3,11 @@ import './navbarcomponent.css'
 import { useNavigate } from 'react-router'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import {Menu,Cancel}  from '@mui/icons-material'
+import { Menu, Cancel } from '@mui/icons-material'
 
 const Navbarcomponent = () => {
   const navigate = useNavigate()
   const [menuButton, setMenuButton] = useState(false)
-  // const [isUpperAnimation, setIsUpperAnimation] = useState(true)
 
   const menuButtonHandler = () => setMenuButton(true)
   useEffect(() => {
@@ -23,7 +22,7 @@ const Navbarcomponent = () => {
           <img src="/images/Philos_Logo.png" alt="" />
         </div>
         <div className="navbar__content">
-          <div className='f-x-y' onClick={() => navigate('/')} data-aos="flip-right">Home</div>
+          <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
           <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
           <div className='f-x-y' onClick={() => navigate('')}>Contact</div>
           <div className='f-x-y' onClick={() => navigate('')}>Home</div>
@@ -40,8 +39,8 @@ const Navbarcomponent = () => {
           </div>
         </div>
         <div className="navbar__menucontent-content">
-          <div className='f-x-y'>Home</div>
-          <div className='f-x-y'>About</div>
+          <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
+          <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
           <div className='f-x-y'>Service</div>
           <div className='f-x-y'>Contact</div>
         </div>

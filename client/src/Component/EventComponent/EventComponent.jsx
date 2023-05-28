@@ -3,10 +3,10 @@ import './eventcomponent.css'
 import Eventcard from './Eventcard'
 import eventData from '../../data.json'
 const EventComponent = () => {
-    const[data,setData]=useState([])
-    useEffect(()=>{
-     setData(eventData)
-    },[])
+    const [data, setData] = useState([])
+    useEffect(() => {
+        setData(eventData)
+    }, [])
     console.log(data.length);
 
     return (
@@ -15,13 +15,13 @@ const EventComponent = () => {
                 Events
             </h1>
             <div className="event__cardcontainer">
-                 {
-                    data.map((data)=>(
+                {
+                    data.map((data, index) => (
 
-                        <Eventcard data={data} imageSrc={"Dance.png"} />
+                        <Eventcard data={data} imageSrc={"Dance.png"}  index={index} />
                     ))
-                 }
-                
+                }
+
             </div>
         </div>
 
