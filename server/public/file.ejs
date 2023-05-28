@@ -1,246 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .headersection {
-            display: flex;
-            justify-content: space-evenly;
-            height: 80px;
-            padding: 0 50px;
-            margin-bottom: 60px;
-        }
-
-        .headersection .header {
-            font-size: 40px;
-            margin: auto 0;
-        }
-
-        .headersection .mainImage {
-            border-radius: 50%;
-        }
-
-        .content {
-            padding: 0;
-        }
-
-
-
-        .detailbox {
-            width: 90%;
-            margin: auto;
-            display: flex;
-            justify-content: flex-start;
-            padding: 5px 0;
-            font-size: 26px;
-        }
-
-        .detailbox span {
-            width: 40%;
-        }
-
-        .tablecontainer {
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.9em;
-            font-family: sans-serif;
-            min-width: 400px;
-            width: 90%;
-            margin: 30px auto;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .tablecontainer thead tr {
-            background-color: #009879;
-            color: #ffffff;
-            text-align: left;
-        }
-
-        .bg-blue {
-            background-color: #009879;
-            color: #ffffff;
-        }
-
-        .tablecontainer tbody tr {
-            text-align: left;
-        }
-
-        .tablecontainer th,
-        .tablecontainer td {
-            padding: 12px 15px;
-        }
-
-        .tablecontainer tbody tr {
-            border-bottom: 1px solid #dddddd;
-        }
-
-        .tablecontainer tbody tr:nth-of-type(even) {
-            background-color: #f3f3f3;
-        }
-
-        .tablecontainer tbody tr:last-child {
-            border-bottom: 2px solid #009879;
-        }
-
-        .tablecontainer tbody tr.active-row {
-            font-weight: bold;
-            color: #009879;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="headersection">
-        <div class="header">
-            Pinnacle Registration
-        </div>
-        <div class="mainImage">
-            <img src="http://localhost:8000/images/Pinnaclelogo.png" alt="">
-        </div>
-    </div>
-
-    <div class="content">
-
-        <div class=" detailbox">
-            <span>
-                <%=data.CollegeName%>
-            </span>
-            <span>ST Philomena College </span>
-        </div>
-        <div class="detailbox">
-            <span>Email</span>
-            <span>
-                <%=data.Email%>
-            </span>
-        </div>
-        <div class="detailbox">
-            <span>IT Manager Name</span>
-            <span>
-                <%=data.ITManagerName%>
-            </span>
-        </div>
-
-        <table class="tablecontainer">
-            <thead>
-                <tr class="bg-blue">
-                    <th>Event Name</th>
-                    <th>Participeant Name</th>
-                    <th>Participent Number</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Web Design</td>
-                    <td>
-                        <%=data.WebDesign.Name%>
-                    </td>
-                    <td>
-                        <%=data.WebDesign.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Coding</td>
-                    <td>
-                        <%=data.Coding.Name%>
-                    </td>
-                    <td>
-                        <%=data.Coding.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Gaming</td>
-                    <td>
-                        <%=data.Gaming.Name%>
-                    </td>
-                    <td>
-                        <%=data.Gaming.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>IT Quiz</td>
-                    <td>
-                        <%=data.ITQuiz.Name%>
-                    </td>
-                    <td>
-                        <%=data.ITQuiz.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thema Dance</td>
-                    <td>
-                        <%=data.ThemaDance.Name%>
-                    </td>
-                    <td>
-                        <%=data.ThemaDance.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Paper Presentation</td>
-                    <td>
-                        <%=data.PaperPresentation.Name%>
-                    </td>
-                    <td>
-                        <%=data.PaperPresentation.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Surprise Event</td>
-                    <td>
-                        <%=data.SurpriseEvent.Name%>
-                    </td>
-                    <td>
-                        <%=data.SurpriseEvent.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>PhotoGraphy and VideoGraphy</td>
-                    <td>
-                        <%=data.PhotoGraphyAndVideoGraphy.Name%>
-                    </td>
-                    <td>
-                        <%=data.PhotoGraphyAndVideoGraphy.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>IT Manager</td>
-                    <td>
-                        <%=data.ITManager.Name%>
-                    </td>
-                    <td>
-                        <%=data.ITManager.Phone%>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Product Launch</td>
-                    <td>
-                        <%=data.ProductLaunch.Name%>
-                    </td>
-                    <td>
-                        <%=data.ProductLaunch.Phone%>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-</body>
-
-</html>
 
 
 <!DOCTYPE html>
@@ -293,7 +51,7 @@
         }
 
         table {
-            width: 1200px;
+            /* width: 1000px; */
             text-align: center;
         }
 
@@ -324,7 +82,7 @@
 
 <body>
     <div class="header">
-        <img src="Picture1.png" alt="">
+        <img src="http://localhost:8000/images/Picture1.png" alt="">
     </div>
 
     <hr>
@@ -336,7 +94,9 @@
         <p><b>To,</b></p>
         <div class="toDiv">
             <p>Principal</p>
-            <p>  <%=data.CollegeName%></p>
+            <p>
+                <%=data.CollegeName%>
+            </p>
         </div>
         <div class="center">
             <P><b>Sub:Seeking Permisson to participate in PINNACLE 2K23</b></P>
@@ -362,99 +122,185 @@
             <tr>
                 <td>1</td>
                 <td>Web Design</td>
-                <td><%=data.Coding.Name%></td>
-                <td>5446544444</td>
+                <td>
+                    <%=data.WebDesign.Name%>
+                </td>
+                <td>
+                    <%=data.WebDesign.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Code Clash</td>
-                <td><%=data.Coding.Name%></td>
-                <td>5446544444</td>
+                <td>
+                    <%=data.Coding.Name%>
+                </td>
+                <td>
+                    <%=data.Coding.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Gaming</td>
-                <td><%=data.Coding.Name%></td>
-                <td>5446544444</td>
+                <td>
+                    <%=data.Gaming.Name%>
+                </td>
+                <td>
+                    <%=data.Gaming.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>VISO Clash</td>
-                <td><%=data.Coding.Name%></td>
-                <td><%=data.Coding.Phone%></td>
+                <td>Gaming</td>
+                <td>
+                    <%=data.Gaming1.Name%>
+                </td>
+                <td>
+                    <%=data.Gaming1.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>IT Quiz</td>
+                <td>
+                    <%=data.ITQuiz.Name%>
+                </td>
+                <td>
+                    <%=data.ITQuiz.Phone%>
+                </td>
             </tr>
+          
             <tr>
                 <td>6</td>
-                <td>it na Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>IT Quiz</td>
+                <td>
+                    <%=data.ITQuiz1.Name%>
+                </td>
+                <td>
+                    <%=data.ITQuiz1.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>7</td>
-                <td>quiz Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Paper Presentation</td>
+                <td>
+                    <%=data.PaperPresentation.Name%>
+                </td>
+                <td>
+                    <%=data.PaperPresentation.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>8</td>
-                <td>suprice Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Surprise Event</td>
+                <td>
+                    <%=data.SurpriseEvent.Name%>
+                </td>
+                <td>
+                    <%=data.SurpriseEvent.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>9</td>
-                <td>Product Launch</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>PhotoGraphy and VideoGraphy</td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy.Name%>
+                </td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>10</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>IT Manager</td>
+                <td>
+                    <%=data.ITManager.Name%>
+                </td>
+                <td>
+                    <%=data.ITManager.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>11</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Product Launch</td>
+                <td>
+                    <%=data.ProductLaunch.Name%>
+                </td>
+                <td>
+                    <%=data.ProductLaunch.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>12</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Product Launch</td>
+                <td>
+                    <%=data.ProductLaunch1.Name%>
+                </td>
+                <td>
+                    <%=data.ProductLaunch1.Phone%>
+                </td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>14</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance1.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance1.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance2.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance2.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance3.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance3.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>17</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance4.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance4.Phone%>
+                </td>
             </tr>
             <tr>
                 <td>18</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td>Code Clash</td>
-                <td>irfan</td>
-                <td>5446544444</td>
-            </tr>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance5.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance.Phone%>
+                </td>
+            </tr>            
         </table>
 
 

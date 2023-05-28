@@ -11,18 +11,20 @@ export const registerToEvent = async (req, res) => {
     try {
         console.log(req.url)
         console.log(req.body)
-        const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz, Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
+        const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz,ITQuiz1, Coding, Gaming,Gaming1, ThemaDance1,ThemaDance2,ThemaDance3,ThemaDance4,ThemaDance5,ThemaDance, PaperPresentation, ProductLaunch,ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
 
         if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
         if (oldRegisteredDate) return res.status(400).json({ isValid: false, errorType: 'ALREADLOGEDINSAMEEMAIL' })
 
         const newRegister = new EventModel({
-            Email, CollegeName, ITManagerName, WebDesign, ITQuiz,
-            Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager
+            Email, CollegeName, ITManagerName, WebDesign, ITQuiz,ITQuiz1,
+            Coding, Gaming,Gaming1,ThemaDance1,ThemaDance2,ThemaDance3,ThemaDance4,
+            ThemaDance5,ThemaDance, PaperPresentation, ProductLaunch,ProductLaunch1,
+             SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager
         })
         const data = await newRegister.save()
-
+        console.log("request data : ",data);
         downloadPdf(data).then(({ err, isValid, pdfUrl }) => {
             if (err || isValid == false) return console.log('downlaod pdf is not valid')
 
@@ -65,6 +67,7 @@ export const sendMail = (email, subject, text, html) => {
 
 
 export const downloadPdf = (data) => {
+    console.log("data :",data);
     return new Promise((resolve, reject) => {
         ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), { data }, async (err, data) => {
             if (err) return reject({ err })

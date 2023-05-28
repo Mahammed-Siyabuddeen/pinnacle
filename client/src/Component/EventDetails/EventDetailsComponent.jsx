@@ -21,7 +21,7 @@ function EventDetailsComponent({data}) {
                 <h1>{data?.name}</h1>
                 <div className={"subContainer"}>
                     <div className={"profile"}>
-                        <img src={`http://localhost:3000/images/${data?.imageSrc}`} alt="" />
+                        <img src={`/images/${data?.imageSrc}`} alt="" />
                     </div>
                     <div className={"details"}>
 
@@ -42,7 +42,7 @@ function EventDetailsComponent({data}) {
                     <div className="eventCordinate_cards">
 
                         <div className="eventCordinate_card">
-                            <img src={`http://localhost:3000/images/${data?.img}`} alt="" />
+                            <img src={`/images/${data?.img}`} alt="" />
                             <div>
                               <h2>jhon viston</h2>
                               <p>jhine@gmail.com</p>
