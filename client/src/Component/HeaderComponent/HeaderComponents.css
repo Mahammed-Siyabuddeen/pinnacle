@@ -42,8 +42,14 @@
 
 }
 
-@media screen and (max-width:500) {
+@media screen and (max-width:500px) {
     .headerContentDiv> .headerContentDiv1{
         width: auto;
+    }
+    .about{
+        width: 85% !important;
+        margin-left: auto !important;
+        margin-right:auto !important;
+        padding:10px !important;
     }
 }

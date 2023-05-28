@@ -141,15 +141,12 @@ section{
     height: 70%;
 }
 
-@media screen and (max-width: 480px) {
-    .subContainer {
-        padding: 20px 50px;
+
+@media screen and (max-width:600px) {
+    .subContainer{
+        margin: auto;
+        padding: 25px;
         grid-template-columns: 1fr;
+        gap: 0;
     }
-
-    /* .cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    } */
-
 }
