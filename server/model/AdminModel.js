@@ -12,7 +12,7 @@ const adminSchema = new Schema({
 
 })
 
-adminSchema.method.matchPassword = function (plainPassword) {
+adminSchema.methods.matchPassword = function (plainPassword) {
     return bcrypt.compare(plainPassword, this.Password)
 }
 const AdminModel = mongoose.model('AdminSchema', adminSchema)

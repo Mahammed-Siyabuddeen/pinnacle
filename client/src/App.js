@@ -6,6 +6,7 @@ import Registerpage from './page/Registepage/Registerpage'
 import Adminloginpage from './page/Adminloginpage/Adminloginpage'
 import EventDetails from './page/EventDetailsPage/EventDetails'
 import Downloadpage from './page/Downloadpage/Downloadpage'
+import Adminpage from './page/Adminpage/Adminpage'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path='/' element={<Homeapage />} />
           <Route exact path='/register' element={<Registerpage />} />
           <Route exact path='/adminlogin' element={<Adminloginpage />} />
+          <Route exact path='/admin' element={<Adminpage />} />
           <Route exact path='/download/:id' element={<Downloadpage />} />
           <Route exact path='/eventdetails' element={<EventDetails />} />
           <Route path='/eventdetails/:eventname' element={<EventDetails />} />
