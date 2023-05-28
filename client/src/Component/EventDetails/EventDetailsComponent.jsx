@@ -59,7 +59,6 @@ function EventDetailsComponent({ data }) {
                     </div>
 
                     <div className="eventCordinate_card">
-                        {/* <img src="http://localhost:3000/images/Coding.jpg" alt="" /> */}
                         <div>
                             <h2>jhon viston</h2>
                             <p>jhine@gmail.com</p>

@@ -1,6 +1,7 @@
 const protofolioCard = document.getElementsByClassName('portfolio_card')
 let number = 0
 
+
 export const autoSlider = () => {
     setInterval(() => {
         if (protofolioCard.length > 0) {

@@ -118,6 +118,7 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .eventCordinate_card{
     width: 350px;
