@@ -1,0 +1,18 @@
+.loadingcomponent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    z-index: 2;
+}
+
+.spinnerBox {
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}

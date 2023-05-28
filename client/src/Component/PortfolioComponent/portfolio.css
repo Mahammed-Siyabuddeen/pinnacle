@@ -23,7 +23,7 @@
     height: 100%;
     position: absolute;
     background-color: gray;
-    display: block;
+    /* display: block; */
 }
 
 .rightTransfer {

@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react'
-import './homeapage.css'
 import Navbarcomponent from '../../Component/Navbarcomponent/Navbarcomponent'
 import EventComponent from '../../Component/EventComponent/EventComponent'
 import HeaderComponent from '../../Component/HeaderComponent/HeaderComponent'

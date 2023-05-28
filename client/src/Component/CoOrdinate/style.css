@@ -1,20 +1,23 @@
-.cordinate{
+.cordinate {
     width: 350px;
     /* height: 300px; */
-    padding: 10px;
+    padding: 20px 10px;
     text-align: center;
     background-color: #1976d2;
     margin: 10px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+    
 }
-.cordinate> .divContent{
+
+.cordinate>.divContent {
     margin: 10px;
     line-height: 30px;
     font-size: 20px;
     color: #ffff;
 }
-.cordinate>img{
+
+.cordinate>img {
     width: 70%;
     height: 70%;
     border-radius: 50%;

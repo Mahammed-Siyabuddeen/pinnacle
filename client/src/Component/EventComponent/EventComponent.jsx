@@ -10,7 +10,7 @@ const EventComponent = () => {
     console.log(data.length);
 
     return (
-        <div className='eventcontainer'>
+        <div className='eventcontainer' id='event'>
             <h1 className="eventcontainer--header f-x-y">
                 Events
             </h1>
