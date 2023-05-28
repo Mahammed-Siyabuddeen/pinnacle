@@ -13,9 +13,9 @@ export const registerToEvent = async (req, res) => {
         console.log(req.body)
         const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1, Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4, ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
 
-        if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND' })
+        if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND', errorMessage: 'Please enter the Email' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
-        if (oldRegisteredDate) return res.status(400).json({ isValid: false, errorType: 'ALREADLOGEDINSAMEEMAIL' })
+        if (oldRegisteredDate) return res.status(400).json({ isValid: false, errorType: 'ALREADYLOGEDINSAMEEMAIL', errorMessage: 'Already one user registered using this Email' })
         const randomString = (Math.random() + 1).toString(36).substring(7);
         const pdfUrl = `${Date.now()}${randomString}.pdf`
 
@@ -27,7 +27,7 @@ export const registerToEvent = async (req, res) => {
         })
         const data = await newRegister.save()
 
-        downloadPdf(data,pdfUrl).then(({ err, isValid, pdfUrl }) => {
+        downloadPdf(data, pdfUrl).then(({ err, isValid, pdfUrl }) => {
             if (err || isValid == false) return console.log('downlaod pdf is not valid')
 
             const { subject, htmlStructure } = getEmailStructure(data.ITManagerName, pdfUrl)
