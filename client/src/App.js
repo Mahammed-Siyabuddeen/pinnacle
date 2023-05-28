@@ -7,6 +7,8 @@ import Adminloginpage from './page/Adminloginpage/Adminloginpage'
 import EventDetails from './page/EventDetailsPage/EventDetails'
 import Downloadpage from './page/Downloadpage/Downloadpage'
 import Adminpage from './page/Adminpage/Adminpage'
+import Desinger from './page/Designer/Desinger'
+import DesignerComponent from './Component/DesignerComponent/DesignerComponent'
 
 const App = () => {
   return (
@@ -21,9 +23,10 @@ const App = () => {
           <Route exact path='/download/:id' element={<Downloadpage />} />
           <Route exact path='/eventdetails' element={<EventDetails />} />
           <Route path='/eventdetails/:eventname' element={<EventDetails />} />
-          <Route path='/eventdetails/345' element={<EventDetails />} />
+          <Route path='/designer' element={<Desinger/>}/>
         </Routes>
       </BrowserRouter>
+      <DesignerComponent/>
     </div>
   )
 }

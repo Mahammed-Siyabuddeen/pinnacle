@@ -9,6 +9,7 @@ import CoOrdinateComponent from '../../Component/CoOrdinate/CoOrdinateComponent'
 import Contact from '../../Component/ContactComponent/Contact'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Generalnstruction from '../../Component/Generalnstruction/Generalnstruction'
 
 const Homeapage = () => {
     useEffect(() => {
@@ -22,11 +23,8 @@ const Homeapage = () => {
             <EventComponent />
             
             <Portfolio/>
-            {/* faculty co ordinate */}
             <CoOrdinateComponent/>
-            {/* student cp-ordinate */}
-            <CoOrdinateComponent/>
-
+            <Generalnstruction/>
             <Contact/>
         </div>
 

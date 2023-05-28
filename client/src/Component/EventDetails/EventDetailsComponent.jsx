@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import './style.css'
-import BadgeIcon from '@mui/icons-material/Badge';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom'
 function EventDetailsComponent({ data }) {
     console.log(data);
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }, [])
     return (
         // <div className='event-maincontainer'>
@@ -36,11 +35,10 @@ function EventDetailsComponent({ data }) {
                                     <li>{data}</li>
                                 ))
                             }
-                            <li>Knowledge of HTML,CSS must</li>
-                            <li>Individual Event</li>
-                            <li>Round details will be given on spot</li>
                         </ul>
-                        <Button className="ButtonMargin" variant='contained'>Register</Button>
+                        <Link to={'/register'}>
+                            <Button className="ButtonMargin" variant='contained'>Register</Button>
+                        </Link>
 
                     </div>
                 </div>

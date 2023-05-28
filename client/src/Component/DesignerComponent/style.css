@@ -1,0 +1,12 @@
+.Desginercontainer{
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.Desginercontainer>h3>span{
+    color: gold;
+}
