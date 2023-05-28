@@ -1,190 +1,226 @@
 [
     {
-        "name":"Coding",
-        "Oname":"Code Clash",
-        "imageSrc":"Coding.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Coding",
+        "Oname": "Code Clash",
+        "imageSrc": "Coding.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "One Participant forms a team.",
+            "Participant must be familiar with competitive programming",
+            "Multiple Rounds will be held with elimination.",
+            "Systems will be provided.",
+            "Usage of tech gadgets is strictly prohibited during rounds.",
+            "Participant of this event can participate in Rhythmic Feets (Dance) event."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Mohammad Ijaz",
+                "phone_number": "+91 7338516513"
+            },
+            {
+                "name": " Anusha K",
+                "phone_number": "+91 6238000032"
             }
         ]
     },
     {
-        "name":"Photography & Videography",
-        "Oname":"Shortflix",
-        "imageSrc":"Phtography.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Photography & Videography",
+        "Oname": "Shortflix",
+        "imageSrc": "Phtography.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "Two Participants forms a team. ",
+            "Participants must bring their own DSLR or Mobile Phone & Laptops withrequired software for editing.",
+            "Round details will be given on spot."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Bipin Kumar S S",
+                "phone_number": "+91 7483706316"
+            },
+            {
+                "name": "Harshitha K P",
+                "phone_number": "+91 8123072297"
             }
         ]
     },
     {
-        "name":"Gaming",
-        "Oname":"Head Shot",
-        "imageSrc":"Gaming.png",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Gaming",
+        "Oname": "Head Shot",
+        "imageSrc": "Gaming.png",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "Two Participants forms a team",
+            "Participants must bring their own Phone & Laptop and necessary items.",
+            "Games: BGMI and CSGO"
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Mohammed Thashreef",
+                "phone_number": "+91 9901213103"
+            },
+            {
+                "name": "Pramith S R",
+                "phone_number": "+91 9611719626"
             }
         ]
     },
     {
-        "name":"IT Quiz",
-        "Oname":"Tech Brainiacs",
-        "imageSrc":"IT Quiz.png",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "IT Quiz",
+        "Oname": "Tech Brainiacs",
+        "imageSrc": "IT Quiz.png",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "Two Participants forms a team.",
+            "Using tech gadgets during the event is strictly prohibited.",
+            "Consists of multiple rounds.",
+            "Span: Information technology and Allied Sectors."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Karthik K R",
+                "phone_number": "+91 9481539064"
+            },
+            {
+                "name": "Janani ",
+                "phone_number": "+91 8792239297"
             }
         ]
     },
     {
-        "name":"Web Designing",
-        "oname":"WebzTechno",
-        "imageSrc":"Web Designing.png",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Web Designing",
+        "oname": "WebzTechno",
+        "imageSrc": "Web Designing.png",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "One Participant form a team.",
+            "System will be provided.",
+            "Round details will be given on spot.",
+            "Participant must have knowledge of HTML, JS, CSS.",
+            "Participant of this event can participate in Rhythmic Feets (Dance) event."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Deepak Acharya K",
+                "phone_number": "+91 9008810459"
+            },
+            {
+                "name": "Shravana",
+                "phone_number": "+91 8105108729"
             }
         ]
     },
     {
-        "name":"Product Launch",
-        "Oname":"IntelliSpark",
-        "imageSrc":"Product Launch.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Product Launch",
+        "Oname": "IntelliSpark",
+        "imageSrc": "Product Launch.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "Two Participants forms a team",
+            "IT Product must be launched through video of 4 min.",
+            "Lead Characters in video must be the participants of event.",
+            "Video should be submitted in a pen drive prior to the event to the respectiveevent head."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": " Misthah Ashir",
+                "phone_number": " +91 9740891740"
+            },
+            {
+                "name": " Khadeejath Farzana A",
+                "phone_number": "+91 7259076103"
             }
         ]
     },
     {
-        "name":"It Manager",
-        "oname":"TechXcellence",
-        "imageSrc":"IT Manager.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "It Manager",
+        "oname": "TechXcellence",
+        "imageSrc": "IT Manager.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "One Participant forms a team.",
+            "Participants can use technological resources according to their needs andpriority abiding by the rules.",
+            "Multiple rounds will be held with elimination.",
+            "Rules will be specific for particular rounds."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Anvith Jason Dsouza",
+                "phone_number": "+91 9778060291"
+            },
+            {
+                "name": "Likhitha A J",
+                "phone_number": "+91 9481472659"
             }
         ]
     },
     {
-        "name":"Paper Presentation",
-        "Oname":"paper",
-        "imageSrc":"Paper Presentation.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Paper Presentation",
+        "Oname": "paper",
+        "imageSrc": "Paper Presentation.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "One participant forms a team.",
+            "Total time allotted per team is 5 + 2 minutes (5min for presentation and 2min for Q/A).",
+            "Total time allotted per team is 5 + 2 minutes.",
+            "Soft copy of the paper should be submitted through email 2 days prior to the event day (Email: spcpinnacle2k23@gmail.com)",
+            "Two hard copies of the paper must be submitted on the day of presentation to the judges.",
+            "PPT must be brought in Pen drive or in your own laptop.",
+            "Participants must bring their own laptop and necessary items. ",
+            "Participant of this event can participate in Rhythmic Feets (Dance) event."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Yathin",
+                "phone_number": ": +91 9606113658"
+            },
+            {
+                "name": "Bushira Kariyappa",
+                "phone_number": "+91 8867147357"
             }
         ]
     },
     {
-        "name":"Surprise Event",
-        "Oname":"Surprise Event",
-        "imageSrc":"Surprise event.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+        "name": "Surprise Event",
+        "Oname": "Surprise Event",
+        "imageSrc": "Surprise event.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "One Participant forms a team.", 
+            "Multiple rounds will be held.", 
+            "Rounds will be announced on the spot."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": "Prajwal M P",
+                "phone_number": "+91 6282572910"
+            },
+            {
+                "name": "Hithashree N",
+                "phone_number": "+91 6363098288"
             }
         ]
-    },{
-        "name":"Dance",
-        "Oname":"Rhythmic Feets",
-        "imageSrc":"Dance.jpg",
-        "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
-        "rules":[
-            "Knowledge of HTML,CSS must",
-            "Individual Event",
-            "Round details will be given on spot"
+    },
+    {
+        "name": "Dance",
+        "Oname": "Rhythmic Feets",
+        "imageSrc": "Dance.jpg",
+        "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
+        "rules": [
+            "3-6 Participants forms a team. ", 
+            "All kinds of dance forms like semi-classical, contemporary, Freestyle, western and folk are included. ", 
+            "Time allotted per each team is 4+1 minutes.", 
+            "Judges and organizers' decisions are final and binding.",
+            "Sound tracks should be submitted in a pen drive prior to the event to the respective event head."
         ],
-        "coOrding":[
+        "coOrding": [
             {
-                "name":"jhon",
-                "email":"sihab@gmail.com",
-                "phone_number":"879058694",
-                "coordinate_img":"Coding.jpg"
+                "name": " Dheeresh S",
+                "phone_number": "+91 9148239276"
+            },
+            {
+                "name": "Anushree ",
+                "phone_number": "+91 9972556093"
             }
         ]
     }
