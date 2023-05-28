@@ -58,8 +58,8 @@
     },
     {
         "name":"IT Quiz",
-        "Oname":"IT Quiz.png",
-        "imageSrc":"Coding.jpg",
+        "Oname":"Tech Brainiacs",
+        "imageSrc":"IT Quiz.png",
         "dec":" Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules":[
             "Knowledge of HTML,CSS must",

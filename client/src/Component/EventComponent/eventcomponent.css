@@ -72,6 +72,8 @@
 .card__title {
     font-size: 20px;
     margin: 15px 0;
+    text-align: center;
+    color: #fff;
 }
 
 
@@ -137,5 +139,15 @@
 
     .card:not(:last-child) {
         margin-right: 40px;
+    }
+
+}
+@media screen  and (max-width:500px){
+    .event__cardcontainer{
+        width: 100%;
+    }
+    .card{
+        height: 300px;
+        margin: 10px
     }
 }

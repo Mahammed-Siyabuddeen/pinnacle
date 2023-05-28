@@ -76,6 +76,8 @@
     .portfolio_cards_container {
         overflow-x: scroll;
         flex-wrap: nowrap;
+        width: 95%;
+        height: 300px;
     }
 
     .portfolio_card {

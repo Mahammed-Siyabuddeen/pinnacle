@@ -15,7 +15,8 @@ const Eventcard = ({ imageSrc, data, index }) => {
                 <img src={`images/${data?.imageSrc}`} alt="" className='br-8' />
             </div>
             <div className="card__title">
-                {data?.name}
+                <h3> {data?.Oname}</h3> 
+                ({data?.name})
             </div>
             <Button variant='contained' >Read More</Button>
         </div>

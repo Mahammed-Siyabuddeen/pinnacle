@@ -18,3 +18,15 @@
 .contact_container_desc{
     max-width: 350px;
 }
+
+@media screen and (max-width:600px) {
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_container>div{
+        margin-bottom: 15px;
+    }
+    .contact_container_desc{
+        max-width: auto !important;
+    }
+}
