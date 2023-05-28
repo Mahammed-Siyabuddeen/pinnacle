@@ -45,6 +45,9 @@ const EventSchema = new Schema({
         Phone: { type: String },
         Name: { type: String },
     },
+    PdfUrl: {
+        type: String
+    }
 })
 
 const EventModel = mongoose.model('EventSchema', EventSchema)

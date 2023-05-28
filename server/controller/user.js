@@ -16,21 +16,23 @@ export const registerToEvent = async (req, res) => {
         if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
         if (oldRegisteredDate) return res.status(400).json({ isValid: false, errorType: 'ALREADLOGEDINSAMEEMAIL' })
+        const randomString = (Math.random() + 1).toString(36).substring(7);
+        const pdfUrl = `${Date.now()}${randomString}.pdf`
 
         const newRegister = new EventModel({
             Email, CollegeName, ITManagerName, WebDesign, ITQuiz,
-            Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager
+            Coding, Gaming, ThemaDance, PaperPresentation, ProductLaunch, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager, PdfUrl: pdfUrl
         })
         const data = await newRegister.save()
 
-        downloadPdf(data).then(({ err, isValid, pdfUrl }) => {
+        downloadPdf(data, pdfUrl).then(({ err, isValid, pdfUrl }) => {
             if (err || isValid == false) return console.log('downlaod pdf is not valid')
 
             const { subject, htmlStructure } = getEmailStructure(data.ITManagerName, pdfUrl)
             console.log(data.Email)
             sendMail(data.Email, subject, '', htmlStructure).then((data) => {
                 console.log('finished ')
-                return res.status(200).json({isValid:true,pdfUrl})
+                return res.status(200).json({ isValid: true, pdfUrl })
             }).catch((err) => console.log('email error ', error))
 
         }).catch((err) => console.log('err', err))
@@ -64,7 +66,7 @@ export const sendMail = (email, subject, text, html) => {
 }
 
 
-export const downloadPdf = (data) => {
+export const downloadPdf = (data, pdfUrl) => {
     return new Promise((resolve, reject) => {
         ejs.renderFile(path.join(__dirname, './', 'public', 'file.ejs'), { data }, async (err, data) => {
             if (err) return reject({ err })
@@ -74,8 +76,6 @@ export const downloadPdf = (data) => {
                 waitUntil: 'domcontentloaded'
             })
             await page.setViewport({ width: 1680, height: 1050 });
-            const randomString = (Math.random() + 1).toString(36).substring(7);
-            const pdfUrl = `${Date.now()}${randomString}.pdf`
 
             await page.pdf({
                 path: path.join(__dirname, './', 'public', 'EventPdf', pdfUrl),
