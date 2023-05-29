@@ -1,5 +1,4 @@
 import React from 'react'
-import './adminloginpage.css'
 import Navbarcomponent from '../../Component/Navbarcomponent/Navbarcomponent'
 import AdminLoginComponent from '../../Component/AdminLoginComponent/AdminLoginComponent'
 

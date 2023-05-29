@@ -1,5 +1,4 @@
 import React from 'react'
-import './registerpage.css'
 import Registercomponent from '../../Component/Registercomponent/Registercomponent'
 import Navbarcomponent from '../../Component/Navbarcomponent/Navbarcomponent'
 

@@ -3,26 +3,37 @@
     justify-content: space-between;
     width: 90%;
     padding: 0 5%;
-    background-color:#1976d2;
+    background-color: #1976d2;
     height: 80px;
     position: static;
     color: #fff;
 }
 
-.navbar__logo {
-    width: 8%;
+.navbar__logosection {
+    width: 50%;
+    display: flex;
+}
+
+.navbar__logosection-img {
+    width: 15%;
+}
+
+.navbar__title {
+    font-size: 30px;
+    margin: auto 0 auto 2%;
 }
 
 .navbar__content {
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 55%;
     font-size: 28px;
-
 }
-.navbar__content>div{
+
+.navbar__content>div {
     cursor: pointer;
 }
+
 .navbar__menubutton {
     display: flex;
     flex-direction: column;
@@ -32,7 +43,7 @@
     margin: auto 0 auto auto;
 }
 
-.navbar__menubutton svg{
+.navbar__menubutton svg {
     font-size: 2.3rem;
 }
 
@@ -60,6 +71,7 @@
     border-radius: 50%;
     font-size: 30px;
 }
+
 .navbar__menucontent-cancelbar svg {
     font-size: 2.1rem;
     color: red;
@@ -67,7 +79,7 @@
 
 .navbar__menucontent-content {
     width: 50%;
-    margin: auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -80,7 +92,8 @@
     padding: 15px 30px;
 }
 
-.navbar__menucontent-content div:hover {
+.navbar__menucontent-content div:hover,
+.navbar__menucontent-content div:hover a {
     background-color: #fff;
     color: #000;
     border-radius: 8px;
@@ -92,11 +105,18 @@
     border-radius: 8px;
 }
 
+
 .swipe--down {
     transition: all .5s ease;
     transform: translateY(0%);
 }
 
+.navbar a,
+.navbar__menucontent-content a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -116,9 +136,21 @@
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .navbar__content {
         display: none;
     }
 
+    .navbar__logosection-img {
+        width: 30%;
+    }
+
+    .navbar__title {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .navbar__logosection-img {
+        width: 50%;
+    }
 }

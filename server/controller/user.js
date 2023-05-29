@@ -102,11 +102,6 @@ const getEmailStructure = (managerName, fileUrl) => {
         text-align: center;
     }
 
-    .imagebox {
-        width: 50%;
-        margin: 0 auto 30px auto;
-    }
-
     img {
         width: 100%;
         height: 100%;
@@ -127,6 +122,7 @@ const getEmailStructure = (managerName, fileUrl) => {
         margin:auto;
         font-size: 22px;
         font-weight: 600;
+        margin:30px 0;
     }
 
     .button {
@@ -152,11 +148,8 @@ const getEmailStructure = (managerName, fileUrl) => {
 </style>
 </head>
 <body>
-    <h1>St Philomea Pinnacle 2023</h1>
+    <h1>St Philomena College Pinnacle 2023</h1>
     <p>Dear ${managerName} your registration in pinncle is succussfull </p>
-    <div class="imagebox">
-        <img src="http://localhost:8000/images/Pinnaclelogo.png" alt="">
-    </div>
 
     <span class="span">You can download your applicants detais pdf here </span>
     <div class="button"><a href="http://localhost:8000/EventPdf/${fileUrl}">Download</a></div>

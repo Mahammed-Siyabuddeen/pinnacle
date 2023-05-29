@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import './navbarcomponent.css'
 import { useNavigate } from 'react-router'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import { Menu, Cancel } from '@mui/icons-material'
+import { HashLink } from 'react-router-hash-link';
+import { Menu, Cancel, Home, HowToReg, EmojiEvents, PermContactCalendar } from '@mui/icons-material'
 
 const Navbarcomponent = () => {
   const navigate = useNavigate()
   const [menuButton, setMenuButton] = useState(false)
 
   const menuButtonHandler = () => setMenuButton(true)
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
-  }, [])
 
   return (
     <div>
 
       <div className='navbar'>
-        <div className="navbar__logo">
+        <div className="navbar__logosection">
+          <div className="navbar__logosection-img">
           <img src="/images/Philos_Logo.png" alt="" />
+          </div>
+          <div className="navbar__title">St Philomena College </div>
         </div>
         <div className="navbar__content">
-          <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
-          <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
-          <div className='f-x-y' onClick={() =>  navigate('/#contact') }>Contact</div>
+          <div className='f-x-y' onClick={() => navigate('/')}><Home />Home</div>
+          <div className='f-x-y' onClick={() => navigate('/register')}><HowToReg />Register</div>
+          <div className='f-x-y' ><HashLink smooth to="/#event"><EmojiEvents />Events</HashLink></div>
+          <div className='f-x-y' ><HashLink smooth to="/#contact"><PermContactCalendar />Contact</HashLink></div>
         </div>
         <div className="navbar__menubutton f-x-y" >
           <Menu onClick={menuButtonHandler} />
@@ -38,9 +38,10 @@ const Navbarcomponent = () => {
           </div>
         </div>
         <div className="navbar__menucontent-content">
-          <div className='f-x-y' onClick={() => navigate('/')}>Home</div>
-          <div className='f-x-y' onClick={() => navigate('/register')}>Register</div>
-          <div className='f-x-y' onClick={() => navigate('/#contact')}>Contact</div>
+          <div className='f-x-y' onClick={() => navigate('/')}><Home />Home</div>
+          <div className='f-x-y' onClick={() => navigate('/register')}><HowToReg />Register</div>
+          <div className='f-x-y' ><HashLink smooth to="/#event"><EmojiEvents />Events</HashLink></div>
+          <div className='f-x-y' ><HashLink smooth to="/#contact"><PermContactCalendar />Contact</HashLink></div>
         </div>
       </div>
     </div >

@@ -4,7 +4,7 @@ import { autoSlider } from './portfolio.js'
 function Portfolio() {
 
   useEffect(() => { 
-    autoSlider()
+    // autoSlider()
   }, [])
 
   

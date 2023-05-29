@@ -34,3 +34,4 @@ const addActiveImage = (number) => {
     backImage.classList.remove('imageLeftToDisplay')
 }
 
+autoSlider()

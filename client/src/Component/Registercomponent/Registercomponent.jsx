@@ -3,6 +3,7 @@ import './registercomponent.css'
 import Inputcomponent from './Inputcomponent/Inputcomponent'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
+import Loadingcomponent from '../Loadingcomponent/Loadingcomponent'
 
 const Registercomponent = () => {
     const [isOpenSpecialInputBox, setIsOpenSpcecialInputBox] = useState(false)
@@ -29,8 +30,10 @@ const Registercomponent = () => {
     const [ThemaDance4, setThemaDance4] = useState({ Name: '', Phone: '' })
     const [ThemaDance5, setThemaDance5] = useState({ Name: '', Phone: '' })
     const [inputError, setInputError] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
     const submitHandler = () => {
+        setIsLoading(true)
         if (isCorrectInput()) {
             axios.post('http://localhost:8000/registerToEvent', {
                 Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1, Coding
@@ -38,8 +41,13 @@ const Registercomponent = () => {
             }).then(({ data }) => {
                 console.log(data)
                 if (data.isValid) navigate(`/download/${data.pdfUrl}`)
-            }).catch(({ response }) => { if (response?.data?.errorMessage?.length > 0) setInputError(response.data.errorMessage) })
+            }).catch(({ response }) => {
+                setIsLoading(false)
+                if (response?.data?.errorMessage?.length > 0) setInputError(response.data.errorMessage)
+            }
+            )
         }
+        else setIsLoading(false)
     }
 
     const isCorrectInput = () => {
@@ -53,7 +61,8 @@ const Registercomponent = () => {
 
 
 
-    return (
+    return (<>
+        {isLoading && <Loadingcomponent />}
         <div className='formcontainer'>
             <div className="formcontainer__header">Register</div>
             <div className="formcontainer__header-content"></div>
@@ -75,8 +84,8 @@ const Registercomponent = () => {
                     <div>
                         <span >Email</span>
                         <input type="text" />
-                    </div>
-                    <div>
+                        </div>
+                        <div>
                         <span >Email</span>
                         <input type="text" />
                     </div>
@@ -97,6 +106,7 @@ const Registercomponent = () => {
             {inputError.length > 0 && <div className='errorText'>input error {inputError} </div>}
             <div className='formcontainer__buttonbox-button button-red f-x-y' onClick={submitHandler}>Register</div>
         </div>
+    </>
     )
 }
 

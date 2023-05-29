@@ -2,7 +2,7 @@ import { Button } from '@mui/material'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import Navbarcomponent from '../../Component/Navbarcomponent/Navbarcomponent'
-import './registercomponent.css'
+import './downlaodpage.css'
 
 const Downloadpage = () => {
     const { id } = useParams()
