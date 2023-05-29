@@ -10,7 +10,7 @@ function Contact() {
         <h1>Contact Us</h1>
         <div className='contact_container_logo'><LocationOn /><p>&nbsp;St Philomena College Puttur</p> </div>
         <div className='contact_container_logo'><Email /><Link to='mailto:spcpinnacle2k23@gmail.com'><p>&nbsp;spcpinnacle2k23@gmail.com</p></Link> </div>
-        <div className="contact_container_logo"><Instagram /><Link to='https://www.instagram.com/spcpinnacle/'><p>&nbsp;spcpinnacle</p></Link></div>
+        <div className="contact_container_logo"><Instagram /><Link to='https://instagram.com/spcpinnacle?igshid=ZGUzMzM3NWJiOQ=='><p>&nbsp;spcpinnacle</p></Link></div>
       </div>
 
       <div>

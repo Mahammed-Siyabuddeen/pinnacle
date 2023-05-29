@@ -18,7 +18,7 @@ function CoOrdinateComponent() {
                     </div>
                 </div>
                 
-                <div className="cordinate" data-aos="fade-right" >
+                <div className="cordinate" data-aos="fade-left" >
                     <img src={`/images/Faculty2.JPG`} alt="" />
                     <div className='divContent'>
                         <h2>Mrs. Rajeshwari M </h2>
@@ -35,7 +35,7 @@ function CoOrdinateComponent() {
                         <p>+91 8971300681</p>
                     </div>
                 </div> 
-                <div className="cordinate" data-aos="fade-right" >
+                <div className="cordinate" data-aos="fade-left" >
                     <img src={`/images/fuculty3.JPG`} alt="" />
                     <div className='divContent'>
                         <h2>Hruday S Naik</h2>

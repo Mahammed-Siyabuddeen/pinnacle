@@ -5,6 +5,7 @@ const EventSchema = new Schema({
     Email: { type: String },
     CollegeName: { type: String },
     ITManagerName: { type: String },
+    ITManagerNumber:{type:String },
     WebDesign: {
         Phone: { type: String },
         Name: { type: String },
@@ -70,6 +71,10 @@ const EventSchema = new Schema({
         Name: { type: String },
     },
     PhotoGraphyAndVideoGraphy: {
+        Phone: { type: String },
+        Name: { type: String },
+    },
+    PhotoGraphyAndVideoGraphy1: {
         Phone: { type: String },
         Name: { type: String },
     },

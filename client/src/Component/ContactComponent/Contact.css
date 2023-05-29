@@ -29,6 +29,9 @@
     .contact_container{
         flex-direction: column;
     }
+    .contact_container div:nth-child(1){
+        margin-bottom: 50px;
+    }
     .contact_container>div{
         margin-bottom: 15px;
     }
