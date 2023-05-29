@@ -6,7 +6,7 @@ function CoOrdinateComponent() {
 
     return (
         <div className='eventCordinate_container'>
-            <h1> Co-Ordinates</h1>
+            <h1>Our Team</h1>
             <div className="eventCordinate_cards" >
 
                 <div className="cordinate" data-aos="fade-right" >

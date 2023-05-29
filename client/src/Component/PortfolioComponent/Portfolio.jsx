@@ -10,7 +10,7 @@ function Portfolio() {
   
   return (
     <div className='portfolio'>
-      <h1>Glimpse of Pinnacle</h1>
+      <h1>Glimpses of Pinnacle 2020</h1>
       <div className="portfolio_cards_container">
 
         <div className="portfolio_card rightTransfer  ">

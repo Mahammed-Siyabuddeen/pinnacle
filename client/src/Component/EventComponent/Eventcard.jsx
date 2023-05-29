@@ -16,7 +16,7 @@ const Eventcard = ({ imageSrc, data, index }) => {
             </div>
             <div className="card__title">
                 <h3> {data?.Oname}</h3> 
-                ({data?.name})
+                ({data?.name })
             </div>
             <Button variant='contained' >Read More</Button>
         </div>
