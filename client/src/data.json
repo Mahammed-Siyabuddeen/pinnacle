@@ -2,7 +2,7 @@
     {
         "name": "Coding",
         "Oname": "Code Clash",
-        "imageSrc": "Coding.jpg",
+        "imageSrc": "Coding.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One Participant forms a team.",
@@ -25,12 +25,12 @@
     },
     {
         "name": "Photography & Videography",
-        "Oname": "Shortflix",
-        "imageSrc": "Phtography.jpg",
+        "Oname": "ShortFlix",
+        "imageSrc": "Phtography.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "Two Participants forms a team. ",
-            "Participants must bring their own DSLR or Mobile Phone & Laptops withrequired software for editing.",
+            "Participants must bring their own DSLR or Mobile Phone & Laptops with required software for editing.",
             "Round details will be given on spot."
         ],
         "coOrding": [
@@ -47,12 +47,13 @@
     {
         "name": "Gaming",
         "Oname": "Head Shot",
-        "imageSrc": "Gaming.png",
+        "imageSrc": "Gaming.PNG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "Two Participants forms a team",
-            "Participants must bring their own Phone & Laptop and necessary items.",
-            "Games: BGMI and CSGO"
+            "Participants must bring their own Phone & Laptop and necessary items like keyboad, mouse, headphones etc.",
+            "Games: BGMI and CSGO.",
+            "Internet will be provided."
         ],
         "coOrding": [
             {
@@ -68,7 +69,7 @@
     {
         "name": "IT Quiz",
         "Oname": "Tech Brainiacs",
-        "imageSrc": "IT Quiz.png",
+        "imageSrc": "Slide1.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "Two Participants forms a team.",
@@ -82,15 +83,15 @@
                 "phone_number": "+91 9481539064"
             },
             {
-                "name": "Janani ",
+                "name": "Janani P N",
                 "phone_number": "+91 8792239297"
             }
         ]
     },
     {
         "name": "Web Designing",
-        "oname": "WebzTechno",
-        "imageSrc": "Web Designing.png",
+        "Oname": "WebzTechno",
+        "imageSrc": "Slide2.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One Participant form a team.",
@@ -113,7 +114,7 @@
     {
         "name": "Product Launch",
         "Oname": "IntelliSpark",
-        "imageSrc": "Product Launch.jpg",
+        "imageSrc": "ProductLaunch.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "Two Participants forms a team",
@@ -134,12 +135,12 @@
     },
     {
         "name": "It Manager",
-        "oname": "TechXcellence",
-        "imageSrc": "IT Manager.jpg",
+        "Oname": "TechXcellence",
+        "imageSrc": "ITManager.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One Participant forms a team.",
-            "Participants can use technological resources according to their needs andpriority abiding by the rules.",
+            "Participants can use technological resources according to their needs and priority abiding by the rules.",
             "Multiple rounds will be held with elimination.",
             "Rules will be specific for particular rounds."
         ],
@@ -156,8 +157,8 @@
     },
     {
         "name": "Paper Presentation",
-        "Oname": "paper",
-        "imageSrc": "Paper Presentation.jpg",
+        "Oname": "Presentopia",
+        "imageSrc": "PaperPresentation.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One participant forms a team.",
@@ -172,7 +173,7 @@
         "coOrding": [
             {
                 "name": "Yathin",
-                "phone_number": ": +91 9606113658"
+                "phone_number": "+91 9606113658"
             },
             {
                 "name": "Bushira Kariyappa",
@@ -182,8 +183,8 @@
     },
     {
         "name": "Surprise Event",
-        "Oname": "Surprise Event",
-        "imageSrc": "Surprise event.jpg",
+        "Oname": "Synapse Surprise",
+        "imageSrc": "Surpriseevent.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One Participant forms a team.", 
@@ -204,14 +205,17 @@
     {
         "name": "Dance",
         "Oname": "Rhythmic Feets",
-        "imageSrc": "Dance.jpg",
+        "imageSrc": "Dance.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "3-6 Participants forms a team. ", 
             "All kinds of dance forms like semi-classical, contemporary, Freestyle, western and folk are included. ", 
             "Time allotted per each team is 4+1 minutes.", 
             "Judges and organizers' decisions are final and binding.",
-            "Sound tracks should be submitted in a pen drive prior to the event to the respective event head."
+            "Sound tracks should be submitted in a pen drive prior to the event to the respective event head.",
+            "An instance of vulgarity/disturbing content will lead to a forceful halt of performance and immediate disqualification.",
+            "No use of any powdered substances/fire/water/animals/smoke machine on stage.",
+            "Performance will be judged on Theme, Choreograph, Synchronization, Costumes, Facial expression and Creativity."
         ],
         "coOrding": [
             {

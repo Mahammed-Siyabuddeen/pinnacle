@@ -9,7 +9,7 @@ const Downloadpage = () => {
     console.log('downlaod id ', id)
 
     const downloadButtonHandler = () => {
-        window.location.href = `https://pinnacle-backend.onrender.com/EventPdf/${id}`
+        window.location.href = `https://api.spcpinnacle.in/EventPdf/${id}`
     }
     useEffect(()=>{
     window.scrollTo(0,0)

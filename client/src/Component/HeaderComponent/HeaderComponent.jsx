@@ -7,7 +7,7 @@ function HeaderComponent() {
     <div className='header'>
       <div className="headerContentDiv">
         <div className='headerContentDiv1' >
-          <img src="/images/PINNACLE 2K23 FINAL LOGO.png" alt="" />
+          <img src="/images/PINNACLE2K23FINALLOGO.png" alt="" />
         </div>
         <div className='headerContentDiv2'>
           <Button variant='contained'> Brochure</Button>

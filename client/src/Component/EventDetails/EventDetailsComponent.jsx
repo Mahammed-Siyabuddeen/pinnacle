@@ -44,13 +44,12 @@ function EventDetailsComponent({ data }) {
                 </div>
             </section>
             <div className='eventCordinate_container'>
-                <h1>Event co-ordinates</h1>
+                <h1>Event Heads</h1>
                 <div className="eventCordinate_cards">
                     {
                         data?.coOrding.map((data) => (
 
                             <div className="eventCordinate_card">
-                                {/* <img src={`/images/${data?.img}`} alt="" /> */}
                                 <div>
                                     <h2>{data.name}</h2>
                                     <p>{data.phone_number}</p>

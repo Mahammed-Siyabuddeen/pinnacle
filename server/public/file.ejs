@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            padding: 0px 100px;
-
-        }
-
         * {
             padding: 0;
             margin: 0;
         }
+        body {
+            padding: 0px 100px;
+        }
+
 
         hr {
             margin-top: 20px;
@@ -26,13 +25,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin: 2%;
+            width: auto;
 
+        }
         .div1 {
+            margin-top: 30px;
             display: flex;
-            justify-content: space-between;
+
+            justify-content: flex-end;
         }
 
         .toDiv {
@@ -50,6 +53,7 @@
             width: 100%;
             margin-top: 30px;
         }
+
         table,
         tr,
         th,
@@ -84,38 +88,35 @@
         p {
             font-size: 18PX;
         }
+        .padding{
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <img src="http://localhost:8000/images/Picture1.png" alt="">
-    </div>
+    
 
-    <hr>
     <div class="div1">
-        <p> <b>Date:</b> <br>19/56/2003</p>
-        <p><b>St Philomena College </b><br>Philonagar, Darbe, Puttur, D.K. - 574202 </p>
+        <p><b>Date: 06-06-2023 </b></p>
     </div>
     <div class="div2">
         <p><b>To,</b></p>
         <div class="toDiv">
             <p>Principal</p>
             <p>
-                <%=data.CollegeName%>
+                St Philomena College, Puttur
             </p>
         </div>
         <div class="center">
-            <P><b>Sub:Seeking Permisson to participate in PINNACLE 2K23</b></P>
+            <P><b>Sub: Participation in PINNACLE 2K23</b></P>
         </div>
         <div class="center">
             <P>
 
-                This is to inform you that your college has accepted the invitation letter and is participating in
+               Students of our college are taking part in the State Level IT fest
                 <b>'PINNACLE 2K23'</b> on 7<sup>th</sup> June, 2023.
-                Below enlisted are he names of the students who are participating in the event and the consent letter
-                which
-                needs to be signed by you.
+                Below enlisted are the names of the students who are participating in the event.
             </P>
         </div>
 
@@ -209,7 +210,7 @@
             </tr>
             <tr>
                 <td>9</td>
-                <td>PhotoGraphy and VideoGraphy</td>
+                <td>Photography and Videography</td>
                 <td>
                     <%=data.PhotoGraphyAndVideoGraphy.Name%>
                 </td>
@@ -219,6 +220,16 @@
             </tr>
             <tr>
                 <td>10</td>
+                <td>Photography and Videography</td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy1.Name%>
+                </td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy1.Phone%>
+                </td>
+            </tr>
+            <tr class="padding">
+                <td>11</td>
                 <td>IT Manager</td>
                 <td>
                     <%=data.ITManager.Name%>
@@ -228,7 +239,7 @@
                 </td>
             </tr>
             <tr>
-                <td>11</td>
+                <td>12</td>
                 <td>Product Launch</td>
                 <td>
                     <%=data.ProductLaunch.Name%>
@@ -238,7 +249,7 @@
                 </td>
             </tr>
             <tr>
-                <td>12</td>
+                <td>13</td>
                 <td>Product Launch</td>
                 <td>
                     <%=data.ProductLaunch1.Name%>
@@ -249,7 +260,7 @@
             </tr>
 
             <tr>
-                <td>13</td>
+                <td>14</td>
                 <td>Thema Dance</td>
                 <td>
                     <%=data.ThemaDance.Name%>
@@ -259,7 +270,7 @@
                 </td>
             </tr>
             <tr>
-                <td>14</td>
+                <td>15</td>
                 <td>Thema Dance</td>
                 <td>
                     <%=data.ThemaDance1.Name%>
@@ -279,7 +290,7 @@
                 </td>
             </tr>
             <tr>
-                <td>16</td>
+                <td>17</td>
                 <td>Thema Dance</td>
                 <td>
                     <%=data.ThemaDance3.Name%>
@@ -289,7 +300,7 @@
                 </td>
             </tr>
             <tr>
-                <td>17</td>
+                <td>18</td>
                 <td>Thema Dance</td>
                 <td>
                     <%=data.ThemaDance4.Name%>
@@ -299,31 +310,31 @@
                 </td>
             </tr>
             <tr>
-                <td>18</td>
+                <td>19</td>
                 <td>Thema Dance</td>
                 <td>
                     <%=data.ThemaDance5.Name%>
                 </td>
                 <td>
-                    <%=data.ThemaDance.Phone%>
+                    <%=data.ThemaDance5.Phone%>
                 </td>
             </tr>
         </table>
 
 
         <div class="consent">
-            <h3>Consent Letter:</h3>
+            
             <p>
-                I, Principal of <%=data.CollegeName%> certify that above facts are true to the best of my
-                knowledge and belief,
-                and I understand that the students are subjected to any disciplinary actions in the event if the facts
-                are found to be falsified. I hereby permit the students of my college to participate in PINNACLE 2K23.
-
+                I, certify that above facts are true to the best of my
+                    knowledge and belief,
+                    and I understand that the students are subjected to any disciplinary actions in the event if the
+                    facts
+                    are found to be falsified. 
             </p>
         </div>
         <div class="sigh">
             <p class="signature">
-                signature of Principal
+                Signature of Principal
             </p>
         </div>
 

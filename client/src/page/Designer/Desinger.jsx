@@ -5,7 +5,7 @@ function Desinger() {
     return (
         <>
             <Navbarcomponent />
-            <div className='eventCordinate_container'>
+            <div className='eventCordinate_container desinger_container'>
                 <h1>Designer</h1>
                 <div className="eventCordinate_cards ">
 
@@ -33,10 +33,10 @@ function Desinger() {
                             <p>+91 6363520187</p>
                         </div>
                         <div className="designer_link">
-                            <a href="https://www.instagram.com/siyab._/">
+                            <a href="https://www.instagram.com/irfan_76_k/">
                                 <Instagram />
                             </a>
-                            <a href="https://www.linkedin.com/in/mohd-shihab/">
+                            <a href="https://www.linkedin.com/in/irfan-k-79a76321b/">
 
                                 <LinkedIn />
                             </a>

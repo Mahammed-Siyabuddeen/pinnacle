@@ -11,7 +11,7 @@ export const registerToEvent = async (req, res) => {
     try {
         console.log(req.url)
         console.log(req.body)
-        const { Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1, Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4, ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager } = req.body
+        const { Email, CollegeName, ITManagerName,ITManagerNumber, WebDesign, ITQuiz, ITQuiz1, Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4, ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy, PhotoGraphyAndVideoGraphy1,ITManager } = req.body
 
         if (!Email) return res.status(400).json({ isValid: false, errorType: 'EMAILNOTFOUND', errorMessage: 'Please enter the Email' })
         const oldRegisteredDate = await EventModel.findOne({ Email })
@@ -20,10 +20,10 @@ export const registerToEvent = async (req, res) => {
         const pdfUrl = `${Date.now()}${randomString}.pdf`
 
         const newRegister = new EventModel({
-            Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1,
+            Email, CollegeName, ITManagerName,ITManagerNumber, WebDesign, ITQuiz, ITQuiz1,
             Coding, Gaming, Gaming1, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4,
             ThemaDance5, ThemaDance, PaperPresentation, ProductLaunch, ProductLaunch1,
-            SurpriseEvent, PhotoGraphyAndVideoGraphy, ITManager, PdfUrl: pdfUrl
+            SurpriseEvent, PhotoGraphyAndVideoGraphy,PhotoGraphyAndVideoGraphy1, ITManager, PdfUrl: pdfUrl
         })
         const data = await newRegister.save()
 

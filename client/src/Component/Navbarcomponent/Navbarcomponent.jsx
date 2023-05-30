@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './navbarcomponent.css'
 import { useNavigate } from 'react-router'
 import { HashLink } from 'react-router-hash-link';
-import { Menu, Cancel, Home, HowToReg, EmojiEvents, PermContactCalendar } from '@mui/icons-material'
+import { Menu, Cancel, Home, HowToReg, EmojiEvents, PermContactCalendar ,Info} from '@mui/icons-material'
 
 const Navbarcomponent = () => {
   const navigate = useNavigate()
@@ -16,15 +16,17 @@ const Navbarcomponent = () => {
       <div className='navbar'>
         <div className="navbar__logosection">
           <div className="navbar__logosection-img">
-          <img src="/images/Philos_Logo.png" alt="" />
+          <img src="/images/Picture1.png" alt="" />
           </div>
-          <div className="navbar__title">St Philomena College </div>
+          {/* <div className="navbar__title">St Philomena College </div> */}
         </div>
         <div className="navbar__content">
           <div className='f-x-y' onClick={() => navigate('/')}><Home />Home</div>
           <div className='f-x-y' onClick={() => navigate('/register')}><HowToReg />Register</div>
           <div className='f-x-y' ><HashLink smooth to="/#event"><EmojiEvents />Events</HashLink></div>
           <div className='f-x-y' ><HashLink smooth to="/#contact"><PermContactCalendar />Contact</HashLink></div>
+          <div className='f-x-y' ><HashLink smooth to="/#about"><Info />About</HashLink></div>
+
         </div>
         <div className="navbar__menubutton f-x-y" >
           <Menu onClick={menuButtonHandler} />

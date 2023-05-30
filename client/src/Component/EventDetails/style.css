@@ -148,6 +148,9 @@ section{
 .designer_card{
     height: auto;
 }
+.desinger_container{
+    margin-top: 0;
+}
 @media screen and (max-width:600px) {
     .subContainer{
         margin: auto;

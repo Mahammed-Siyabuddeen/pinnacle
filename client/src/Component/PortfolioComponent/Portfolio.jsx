@@ -10,32 +10,32 @@ function Portfolio() {
   
   return (
     <div className='portfolio'>
-      <h1>Glimpse of Pinnacle</h1>
+      <h1>Glimpses of Pinnacle 2020</h1>
       <div className="portfolio_cards_container">
 
         <div className="portfolio_card rightTransfer  ">
-          <img src="/images/glimses/glim1.JPG" alt="" />
+          <img src="/images/Glimses/Glim1.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim2.JPG" alt="" />
+          <img src="/images/Glimses/Glim2.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim3.JPG" alt="" />
+          <img src="/images/Glimses/Glim3.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim4.JPG" alt="" />
+          <img src="/images/Glimses/Glim4.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim5.JPG" alt="" />
+          <img src="/images/Glimses/Glim5.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim6.JPG" alt="" />
+          <img src="/images/Glimses/Glim6.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim7.JPG" alt="" />
+          <img src="/images/Glimses/Glim7.JPG" alt="" />
         </div>
         <div className="portfolio_card rightTransfer ">
-          <img src="/images/glimses/glim8.JPG" alt="" />
+          <img src="/images/Glimses/Glim8.JPG" alt="" />
         </div>
 
 

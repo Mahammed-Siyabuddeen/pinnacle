@@ -15,7 +15,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
 
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name {member2 || member6? '1':''}</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler({ ...componentState, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -31,7 +31,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
 
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name 2</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler1({ ...componentState1, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -47,7 +47,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
                     <>
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name-2</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler1({ ...componentState1, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -57,7 +57,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
                     </div>
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name-3</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler2({ ...componentState2, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -67,7 +67,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
                     </div>
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name-4</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler3({ ...componentState3, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -77,7 +77,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
                     </div>
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name-5</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler4({ ...componentState4, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
@@ -87,7 +87,7 @@ const Inputcomponent = ({ title, inputName, inputHandler,inputHandler1,inputHand
                     </div>
                     <div className='formcontainer__inputbox-speacialbox-inputbox'>
                         <div>
-                            <span>Name</span>
+                            <span>Participant Name-6</span>
                             <input type="text" name='Name' onChange={(e) => inputHandler5({ ...componentState5, [e.target.name]: e.target.value })} />
                         </div>
                         <div>
