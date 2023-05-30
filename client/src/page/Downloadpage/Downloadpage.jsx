@@ -9,7 +9,7 @@ const Downloadpage = () => {
     console.log('downlaod id ', id)
 
     const downloadButtonHandler = () => {
-        window.location.href = `http://localhost:8000/EventPdf/${id}`
+        window.location.href = `https://spcpinnacle.in/api/EventPdf/${id}`
     }
     useEffect(()=>{
     window.scrollTo(0,0)

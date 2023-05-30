@@ -9,7 +9,7 @@ const Admincomponent = () => {
     const navigate = useNavigate()
     useEffect(() => {
         console.log('effect')
-        axios.post('http://localhost:8000/admin/getEventDetails', {}, { withCredentials: true }).then(({ data }) => {
+        axios.post('https://spcpinnacle.in/api/admin/getEventDetails', {}, { withCredentials: true }).then(({ data }) => {
             console.log(data.EventDetails)
             setCollegeDetails([...data.EventDetails])
         }).catch(({ response }) => {

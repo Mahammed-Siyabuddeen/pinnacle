@@ -10,7 +10,7 @@ const AdminLoginComponent = () => {
     const [inputError, setInputError] = useState('')
 
     const submitHandler = () => {
-        axios.post('http://localhost:8000/admin/login', adminDetail, { withCredentials: true }).then(({ data }) => {
+        axios.post('https://spcpinnacle.in/api/admin/login', adminDetail, { withCredentials: true }).then(({ data }) => {
             console.log(data)
             if (data.isValid) navigate('/admin')
         }).catch(({ response }) => { if (response?.data?.errorMessage?.length > 0) setInputError(response.data.errorMessage) })
