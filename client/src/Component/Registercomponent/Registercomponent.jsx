@@ -35,7 +35,7 @@ const Registercomponent = () => {
     const submitHandler = () => {
         setIsLoading(true)
         if (isCorrectInput()) {
-            axios.post('http://localhost:8000/registerToEvent', {
+            axios.post('https://pinnacle-backend.onrender.com/registerToEvent', {
                 Email, CollegeName, ITManagerName, WebDesign, ITQuiz, ITQuiz1, Coding
                 , Gaming, Gaming1, ITManager, ThemaDance, ThemaDance1, ThemaDance2, ThemaDance3, ThemaDance4, ThemaDance5, PaperPresentation, ProductLaunch, ProductLaunch1, SurpriseEvent, PhotoGraphyAndVideoGraphy
             }).then(({ data }) => {

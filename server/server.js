@@ -18,7 +18,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 };
 app.use(cookieParser())
-app.set(express.static('public'))
+// app.set(express.static('public'))
 app.use(express.static('public'))
 app.use(cors(corsOptions))
 app.use(bodyParser())
@@ -30,3 +30,5 @@ app.use('/admin', adminRouter)
 dbConnect(() => {
     app.listen(process.env.port || 8000, () => console.log('server listening at http://localhost:8000/'))
 })
+
+//#Shi2019326/
