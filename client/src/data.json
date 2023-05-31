@@ -69,7 +69,7 @@
     {
         "name": "IT Quiz",
         "Oname": "Tech Brainiacs",
-        "imageSrc": "Slide1.JPG",
+        "imageSrc": "ITQuiz.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "Two Participants forms a team.",
@@ -91,7 +91,7 @@
     {
         "name": "Web Designing",
         "Oname": "WebzTechno",
-        "imageSrc": "Slide2.JPG",
+        "imageSrc": "Webdesign.JPG",
         "dec": " Web Dynamo is an exciting event that provides a platform for web designing enthusiasts to showcase their skills and creativity. This event is perfect for those who are passionate about web designing, user experience, and creativity",
         "rules": [
             "One Participant form a team.",

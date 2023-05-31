@@ -6,7 +6,7 @@ const Admincard = ({ data, index }) => {
     const [showDetail, setShowDetail] = useState(false)
     console.log('card')
     const downloadHandler = () => {
-        window.location.href = `https://api.spcpinnacle.in/apiEventPdf/${data?.PdfUrl}`
+        window.location.href = `https://api.spcpinnacle.in/EventPdf/${data?.PdfUrl}`
 
     }
     return (

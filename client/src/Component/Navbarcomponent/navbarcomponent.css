@@ -145,10 +145,13 @@
         display: none;
     }
 
-    .navbar__logosection-img {
-        width: 30%;
+    .navbar__logosection {
+        width: 85%;
     }
 
+    .navbar__logosection-img{
+        width: 100%;
+    }
     .navbar__title {
         display: none;
     }

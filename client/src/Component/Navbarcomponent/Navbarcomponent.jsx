@@ -16,7 +16,7 @@ const Navbarcomponent = () => {
       <div className='navbar'>
         <div className="navbar__logosection">
           <div className="navbar__logosection-img">
-          <img src="/images/Picture1.png" alt="" />
+          <img src="/images/Picture1.PNG" alt="" />
           </div>
           {/* <div className="navbar__title">St Philomena College </div> */}
         </div>
