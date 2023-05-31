@@ -26,7 +26,7 @@ function Desinger() {
                         </div>
                     </div>
 
-                    <div className="eventCordinate_card designer_card">
+                    <div className="eventCordinate_card designer_card ">
                         <img src={`/images/Designer2.JPG`} alt="" />
                         <div>
                             <h2> Irfan</h2>

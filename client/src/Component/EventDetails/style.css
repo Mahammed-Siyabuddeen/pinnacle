@@ -141,6 +141,7 @@ section{
 .eventCordinate_card>img{
     width: 100%;
     height: 70%;
+    aspect-ratio: 10/7;
 }
 
 
